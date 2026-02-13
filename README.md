@@ -37,6 +37,3 @@ Using data from **NYC OpenData** (Crime Complaints) and **OpenStreetMap**, the a
 * `processed_risk_data.csv`: Cleaned dataset of crime incidents.
 * `safe_places.csv`: Geolocation of hospitals, police stations, and 24/7 shelters.
 * `3_build_advanced_graph.py`: (Offline) Script used to generate the graph and train the risk weights.
-
-## Academic Context
-Prototype developed for the PDAI Assignment 1.
