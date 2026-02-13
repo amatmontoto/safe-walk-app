@@ -1,0 +1,1439 @@
+lat,lon,type,name
+40.8800853,-73.8798439,hospital,Montefiore Medical Center West Campus Moses Division Hospital
+40.8464723,-73.8388275,hospital,New York City Children's Center Bronx Campus
+40.7865276,-73.9322574,hospital,Kirby Forensic Psychiatric Center
+40.8803581,-73.8813965,hospital,North Central Bronx Hospital
+40.8584327,-73.8553395,clinic,New York Eye Surgery Center
+40.7851459,-73.9279094,hospital,George Rosenfeld Center for Recovery
+40.7538889,-73.7083333,hospital,Cohen’s Children’s Medical Center
+40.7377778,-74.0008333,hospital,Lenox Health Greenwich Village
+40.7215695,-73.9800525,clinic,Ryan/NENA Comprehensive Heath Service Center
+40.7697091,-73.9529748,hospital,Gracie Square Hospital
+40.7620381,-73.9553606,hospital,Rockefeller University Hospital
+40.7318799,-73.9845807,hospital,New York Eye and Ear Infirmary of Mount Sinai
+40.8207004,-73.9015657,clinic,Montefiore South Bronx Center Children and Families
+40.764233,-73.963647,hospital,Manhattan Eye Ear and Throat Hospital
+40.8051864,-73.9536189,clinic,"NYC Health + Hospitals/Gotham Health, Sydenham"
+40.8362222,-73.920093,clinic,"NYC Health + Hospitals/Gotham Health, Morrisania"
+40.8193623,-73.8893249,clinic,Bella Vista Health Center
+40.8333008,-73.8906211,clinic,Plaza del Castillo Health Center
+40.8253239,-73.9170033,clinic,Montefiore Comprehensive Health Care Center
+40.8445094,-73.9059884,clinic,Claremont Family Health Center
+40.8463333,-73.9044069,clinic,Clay Avenue Family Health Care Center
+40.8202928,-73.8582657,clinic,Stevenson Family Health Center
+40.8196512,-73.8477966,clinic,Mannam Medical Center
+40.831306,-73.9028319,clinic,"Doctor Martin Luther King, Junior Health Center"
+40.8232115,-73.8952716,clinic,Community Healthcare Network
+40.7536455,-73.8605021,hospital,Plaza del Sol Family Health Center
+40.7659059,-73.9548792,clinic,The Herman J. Stich Medical Building
+40.8561127,-73.8442958,police,49th Precinct
+40.8224393,-73.9113094,police,Fortysecond Precinct Police Station
+40.8875,-73.8475,police,Fortyseventh Precinct Police Station
+40.8540411,-73.9001068,police,NYPD 46 Precinct
+40.8875,-73.8772222,police,Jerome Avenue Gate House and Police Station
+40.8286111,-73.9438889,police,NYPD 30 PCT
+40.7119845,-74.0022478,police,New York City Police Headquarters
+40.8103299,-73.925216,police,Fortieth Precinct Police Station
+40.8167675,-73.8959695,police,Police Athletic League Bronx Community Center
+40.7267398,-73.9532901,police,Ninety fourth Precinct Police Station
+40.6953832,-73.9830771,police,NYPD 84th Precinct
+40.6896844,-73.9244159,police,Eightyfirst Precinct Police Station
+40.7670729,-73.9638697,police,NYPD 19 PCT
+40.7538947,-73.9949396,police,Midtown South Precinct Police Station
+40.707208,-73.9624756,police,Ninetieth Precinct Police Station
+40.7890749,-73.9470179,police,23rd Precinct Police Station
+40.8439662,-73.9002941,police,Fortyeighth Precinct Station House
+40.6662553,-73.7345983,police,New York City Police
+40.822877,-73.8698072,police,43rd Precinct
+40.7317446,-73.9885326,,Westside Market
+40.780745,-73.9817611,,Fairway Market
+40.7575851,-73.9697612,pharmacy,Duane Reade
+40.7026168,-73.9894421,,Peas & Pickles
+40.6499122,-73.9711187,police,
+40.8376206,-73.9195052,police,44th Precinct
+40.7688846,-73.9852324,,Morton Williams
+40.6729738,-73.9862454,clinic,NewYork-Presbyterian Ambulatory Infusion Center
+40.7166187,-74.0093343,clinic,One Medical
+40.6767635,-73.9837557,,Green Ivy
+40.7464784,-73.9717941,hospital,NYU Langone Outpatient Surgery Center
+40.7451888,-73.9198546,,Food Universe
+40.6799224,-73.7758415,police,NYPD 113 PCT
+40.7623558,-73.8269924,police,NYPD 109 Precinct
+40.8076459,-73.9645252,,Morton Williams
+40.7933581,-73.9723713,pharmacy,Duane Reade
+40.7958418,-73.9712857,,Westside Market
+40.7937062,-73.9703785,,Key Food
+40.7990976,-73.9682139,clinic,Columbia Primary Care
+40.7995403,-73.9679922,clinic,CityMD
+40.6933421,-73.9714871,,Green-Ville Garden
+40.7071393,-73.9538152,,Broadway Mini Market Deli
+40.7738776,-73.9071913,,Trade Fair
+40.7102691,-74.0075338,pharmacy,CVS Pharmacy
+40.7766092,-73.9824517,clinic,CityMD
+40.7445379,-73.9506633,fuel,Citgo
+40.8704474,-73.9148134,fuel,Sunoco
+40.6154087,-73.9979516,,A&B Food Corp
+40.5993281,-73.9118325,police,New York City Police Department Highway Patrol
+40.5837916,-73.8845382,police,United States Park Police
+40.7046154,-74.0078508,pharmacy,Duane Reade
+40.6821864,-73.8397899,police,NYPD 106 PCT
+40.7554471,-73.888045,,7-Eleven
+40.731866,-73.982422,pharmacy,CVS Pharmacy
+40.7333888,-73.9868305,pharmacy,Duane Reade
+40.8012852,-73.9681784,,Six Corners Marketplace
+40.7551164,-73.9947948,,AM-PM Deli and Grocery
+40.7476133,-74.0045044,pharmacy,CVS Pharmacy
+40.741435,-74.0015697,pharmacy,Duane Reade
+40.7439987,-73.999691,,West 21 Deli and Grocery
+40.745239,-73.869946,police,NYPD 110 PCT
+40.7602789,-73.7676997,police,NYPD 111 PCT
+40.7071167,-73.7926624,police,NYPD 103 PCT
+40.6987245,-73.8314459,police,NYPD 102 PCT
+40.6029503,-73.7499972,police,NYPD 101 PCT
+40.7161816,-73.9974633,police,NYPD 5 PCT
+40.7163634,-73.9837197,police,NYPD 7th Precinct
+40.7203451,-74.0070419,police,NYPD 1 PCT
+40.7247679,-73.9781467,police,NYPD PSA 4
+40.7426863,-73.9983835,police,NYPD 10 PCT
+40.7340416,-74.0054536,police,NYPD 6 PCT
+40.7567621,-73.9707859,police,NYPD 17 PCT
+40.8157476,-73.9453969,police,NYPD 32 PCT
+40.6981172,-73.9924718,,All in One Deli Mart
+40.7896319,-73.9701343,clinic,Mount Sinai Urgent Care
+40.6875154,-73.990078,,Smith Gourmet Deli
+40.6913665,-73.9978457,,Urban Deli
+40.7659619,-73.9312377,clinic,Mount Sinai Doctors
+40.6370854,-73.9683672,clinic,Family Health Care Plaza
+40.6717362,-73.9878474,,Gowanus Convenience
+40.6908655,-73.9960147,,Champion Deli & Grocery
+40.5941374,-74.1625322,clinic,CityMD
+40.6726518,-73.8736241,,24 7 Eats
+40.7269963,-73.9952645,clinic,CityMD
+40.732775,-73.849781,clinic,Centers Urgent Care
+40.6557782,-73.9597121,,Organic Market
+40.6253939,-73.9606288,,7-Eleven
+40.6612138,-73.9937801,,Market Deli
+40.6602713,-73.9979098,,4th Ave Deli & Grill
+40.6487599,-73.9504277,police,NYPD 67th Precinct
+40.7269949,-73.98552,,East 7 Deli & Cafe
+40.6818714,-73.9797661,,Slope Natural Plus
+40.6876927,-73.9844263,,State Express Deli
+40.6867445,-73.984805,,Apple Gourmet Farm
+40.660371,-73.9805797,,A&M Prospect Deli
+40.6808363,-73.9615921,,Snack Shop
+40.6658406,-73.9892954,clinic,Maimonides Doctors
+40.7257868,-73.7923751,clinic,Fresenius Medical Care
+40.7265813,-73.7897072,clinic,
+40.728838,-73.7828233,clinic,"New York Presbyterian, Medical Group Queen"
+40.61204,-74.0340684,clinic,ProHealth Urgent Care
+40.6181749,-74.0337231,clinic,Mercy Medical Care
+40.6313687,-74.0279906,,Parkway Express Deli & Grill
+40.5789693,-73.9831988,,Neptune Deli
+40.58033,-73.967053,,Deli & Grill
+40.5796408,-73.9640279,clinic,First Step Children Center
+40.5784623,-73.9616707,clinic,Professional Gynecological Services
+40.6343749,-74.0234088,clinic,Ben Sinai Medical Center
+40.74036,-73.7592249,clinic,Summit Health
+40.7171702,-73.7669739,clinic,Ryman Examination Services
+40.7401034,-73.9893444,hospital,Aimee Raupp Wellness & Fertility Center
+40.5988529,-73.9883623,clinic,Milestone Pediatrics
+40.5989,-73.9884411,clinic,Milestone Medicine
+40.6040577,-73.9720339,,Kings Express Deli & Grocery
+40.6289585,-73.9878833,,Einhorn's
+40.6391871,-74.0170361,clinic,61st Medical Dental Office
+40.6382185,-74.020588,,BP Shop
+40.6468357,-74.0118976,,Blue Moon Deli & More
+40.6544037,-74.0043303,,952 Food Corp
+40.652049,-74.0064734,,40 St Deli & Grill
+40.6501501,-74.0048436,,Gourmet Deli Grocery
+40.7348335,-73.9897815,clinic,Mount Sinai Union Square
+40.7258739,-74.0092515,,Spring Street Finest Deli
+40.5984208,-73.9590401,clinic,NewYork-Presbyterian Medical Group
+40.5991315,-73.9515561,clinic,Sinai Diagnosis
+40.7172406,-74.0007776,police,NYPD Special Victims Division
+40.6507052,-73.9545153,clinic,
+40.6629447,-73.9507077,,1037 Nostrand Deli
+40.6684062,-73.9309967,,Fresh and Fancy
+40.6629821,-73.9429414,clinic,Crown Heights Urgent Care
+40.668105,-73.9587372,,Brothers Food Center
+40.7178467,-73.9896095,,Happiness Deli
+40.6896496,-73.9392294,,One Stop Deli & More
+40.6744251,-73.9499217,,Prospect Deli & Grocery
+40.6965408,-73.9379051,,Fresh Deli
+40.6782296,-73.9495608,,Wholesome Farms Market
+40.6755126,-73.9414789,,Bergen Deli Market
+40.6875956,-73.9571131,,2 Nature Market 2
+40.6830038,-73.9639684,clinic,First Response Urgent Care & Medical Center
+40.6936435,-73.9652572,,497 Deli
+40.694021,-73.9620791,,Pronto Gourmet & Deli
+40.6986202,-73.9567888,clinic,Chai Urgent Care
+40.6896186,-73.9647005,clinic,Prominis Clinton Hill
+40.693495,-73.9761741,clinic,Whitman Ingersoll Farragut Health Center
+40.6955512,-73.983071,police,NYPD Transit Special Victims Squad
+40.696875,-73.9829758,,Gold Street Market
+40.6922299,-73.9844766,,Brooklyn Deli
+40.6985172,-73.9347441,,Aden Deli & Grill
+40.6971414,-73.9352759,,Star Deli & Grill
+40.7014933,-73.9268769,,Fresh & Fancy Delicatessen
+40.6782763,-73.9735051,clinic,CityMD
+40.7345797,-73.8645061,clinic,Gotham Health Lefrak
+40.6897138,-73.9784621,,A & J Deli Grocery
+40.6896983,-73.9780736,,Greene Bites
+40.6813604,-73.9740981,,Dean Organic Market
+40.8007935,-73.9619825,clinic,Columbus Medical Group
+40.7832141,-73.9780184,,Amsterdam Marketplace
+40.7330669,-73.987075,clinic,Medrite Urgent Care
+40.8254651,-73.9477205,,East & West Deli & Grocery
+40.8240698,-73.9491754,,Karama Deli Grocery
+40.6912187,-73.9871958,pharmacy,Duane Reade
+40.7761219,-73.9103933,pharmacy,CVS Pharmacy
+40.756098,-73.9866768,pharmacy,Walgreens
+40.7762581,-73.9555897,,7-Eleven
+40.7653369,-73.9635523,pharmacy,Duane Reade
+40.7642381,-73.9775292,pharmacy,Duane Reade
+40.7585698,-73.9710738,pharmacy,CVS Pharmacy
+40.7678873,-73.9556728,pharmacy,Duane Reade
+40.7673529,-73.9565664,,Morton Williams
+40.733763,-73.8698343,clinic,CityMD
+40.7399977,-74.0025703,pharmacy,CVS Pharmacy
+40.7428903,-74.0037132,,Alaska Food Market
+40.7363371,-73.9852005,,Punjab on Third
+40.7361275,-73.9828211,clinic,NYU Langone Health Orthopedics
+40.7387696,-73.9834173,,Heavenly Market
+40.7369248,-73.9810037,clinic,NYU Langone Radiology
+40.7369154,-73.9812314,clinic,Suboxone Treatment Clinic
+40.7470223,-73.9892703,clinic,One Medical
+40.7458423,-73.97994,clinic,Laura Perlmutter Center for Women's Imaging
+40.7630462,-73.9894867,pharmacy,Duane Reade
+40.7636584,-73.9710384,clinic,Radiance Aesthetics & Wellness
+40.7463553,-73.9779,,Murry Hill Mini Market
+40.6800348,-73.9678019,,Stop II Organic & Grocery Store
+40.7474807,-73.9741425,,Seven Marketplace
+40.7615187,-73.9603618,,Space 62 Market
+40.7609528,-73.9687909,hospital,MRHS Primary Care
+40.7659224,-73.9549182,clinic,Jill Roberts Center for Inflammatory Bowel Disease
+40.7746371,-73.9478346,,7-Eleven
+40.7765808,-73.952428,,84th & 2nd Corner Deli
+40.7774587,-73.9545264,clinic,Tisch Center for Women's Health
+40.7781593,-73.9579804,clinic,Dr. Shawn Khodadadian
+40.7883491,-73.9472575,,Emmerson Gourmet Deli
+40.7785223,-73.9822861,pharmacy,Duane Reade
+40.7852718,-73.979573,clinic,One Medical
+40.785191,-73.9728637,,Eats on Columbus Ave
+40.7925223,-73.971783,clinic,Amsterdam Family Health Center
+40.7964779,-73.967428,police,NYPD 24 PCT
+40.7984247,-73.9637089,clinic,Columbus Medical Arts
+40.7921581,-73.9384429,,348 Chopped Cheese Deli
+40.8018884,-73.956978,,Fred's Munchies
+40.8049571,-73.9570766,,Sunny Deli & Grill
+40.8042614,-73.9662829,,Westside Market
+40.8224012,-73.9412917,clinic,USA Vein Clinics
+40.8255747,-73.9433066,clinic,ZipCare
+40.8456572,-73.9384198,clinic,Lenox Hill Radiology
+40.8455904,-73.9388396,,Yummilicious
+40.8472175,-73.9317747,clinic,Davita Kidney Care
+40.848329,-73.931713,,Grill and Height Deli
+40.8506814,-73.9379401,,Smile Deli
+40.7667867,-73.9825327,pharmacy,CVS Pharmacy
+40.772061,-73.9153543,,2401 Gourmet Deli
+40.8468665,-73.8962436,clinic,Community Healthcare Network
+40.8606324,-73.8977191,clinic,BronxCare Medical and Dental at Poe
+40.8803725,-73.878898,hospital,Children's Hospital at Montefiore
+40.8824042,-73.8813192,clinic,CityMD
+40.8842786,-73.8996623,clinic,CityMD
+40.8847584,-73.9000026,clinic,Saint Joseph's Medical Practice
+40.884902,-73.9005198,,238 Corner Store
+40.8937765,-73.8610822,hospital,Montefiore Medical Center - Wakefield Campus
+40.7179686,-73.9855204,,
+40.732654,-73.9818476,,Stuytown Marketplace
+40.7473275,-73.9737997,,710 Quick Stop
+40.6751095,-74.0012889,clinic,DaVita Dialysis
+40.7571143,-73.7833843,hospital,Quest Diagnostics
+40.7083909,-73.9582351,,JMZ Broadway Deli
+40.7056311,-73.9445104,clinic,Community Healthcare Network - Williamsburg
+40.7063994,-73.9510296,police,NYPD Emergency Service Unit Squad 8
+40.7064072,-73.9505747,police,NYPD 90th Precinct
+40.7117631,-73.9628967,,Aden Food Market
+40.7193344,-73.963381,,20 North Fifth Street Deli
+40.718402,-73.9502204,,Blue Star Deli & Organic
+40.7241041,-73.9500932,,Wholesome Gourmet Deli
+40.7134286,-73.8739921,clinic,CareCube
+40.7390145,-73.9180161,clinic,Medical Office
+40.7436549,-73.9253981,,La Guardia Gourmet Deli
+40.7436601,-73.9184701,clinic,Progressive Ophthalmology
+40.7435287,-73.9193137,,Taste Buds
+40.744811,-73.9186394,clinic,Yom's Sunnyside Acupuncture
+40.7436823,-73.9206403,,Bite & Butter
+40.7440731,-73.9239756,,Viraj Mart
+40.746013,-73.9005514,clinic,Lamd Medical Group and Urgent Care
+40.7588708,-73.9122484,clinic,
+40.7659726,-73.919759,clinic,MedRite Urgent Care
+40.7697224,-73.9170691,,Astoria Beer & Market
+40.7680634,-73.9235788,clinic,Centers Urgent Care
+40.7669213,-73.9217462,,Trade Fair
+40.7594345,-73.9369702,clinic,Community Healthcare Network
+40.7707702,-73.9075425,clinic,
+40.8411704,-73.843542,clinic,CityMD
+40.8354341,-73.8555438,,Khalil Food Court
+40.6932648,-73.8315932,,Apna Bazar
+40.6753148,-73.737589,clinic,Laurelton Center for Woman & Family Health
+40.6808246,-73.7635574,clinic,Personal Injury Urgent Care
+40.679623,-73.7618095,clinic,CityMD
+40.7087715,-73.8182213,clinic,Urgent Care
+40.729794,-73.8235921,,7-Eleven
+40.7343044,-73.7543321,clinic,Bayside Medical
+40.7310084,-73.744098,clinic,Fresenius Kidney Care
+40.751444,-73.870591,,Junction Store
+40.7507829,-73.8705876,clinic,CityMD
+40.7687402,-73.8425714,police,NYPD Tow Pound
+40.7262821,-73.9835462,,Ray's Candy Store
+40.7087325,-74.0046656,,55 Fulton Market
+40.6871914,-73.9761311,,Mr. Mango
+40.7086915,-73.9432465,,Mike Deli & Grill
+40.6459295,-73.9953448,,M9 Deli & Grill
+40.7824879,-73.9804686,pharmacy,CVS Pharmacy
+40.7509591,-73.9874993,pharmacy,Duane Reade
+40.7590707,-73.9354641,,Trade Fair
+40.7280284,-73.9847603,,Lime Tree Market
+40.73285,-73.9865496,clinic,CityMD
+40.731607,-73.9827807,,Community Grocery & Candy
+40.7674908,-73.9828738,pharmacy,Duane Reade
+40.7498999,-73.9719152,clinic,Chai Care Urgent Care
+40.7451494,-73.9804205,clinic,New York Doctors Urgent Care
+40.761347,-73.924417,,Green Bay Organic Marketplace
+40.734623,-73.938069,fuel,Gulf
+40.740627,-73.922244,clinic,Sunnyside Pediatrics
+40.7394897,-73.922112,,Celtic Deli
+40.7394797,-73.9871968,,Morton Williams
+40.7155941,-73.9980907,clinic,Bayard Street Obstetrics and Gynecology
+40.5860313,-73.9521461,clinic,Triborough GI
+40.8212432,-73.9387526,,Fine Fare Supermarket
+40.7653907,-73.9305232,,City Fresh Market
+40.55442,-74.1438169,,ShopRite
+40.7116801,-73.7871657,clinic,
+40.7626458,-73.9834959,pharmacy,Duane Reade
+40.6360746,-74.0762227,fuel,BP
+40.6747774,-73.8087609,fuel,Sunoco
+40.5967513,-74.0934478,,Deli & Grocery
+40.6094316,-74.0896348,fuel,BP
+40.582431,-73.9864327,fuel,BP
+40.6898368,-73.9821089,clinic,Dr. Dmitriy Bronfman
+40.7419489,-73.9861417,clinic,Manhattan Cardiovascular Associates
+40.6015074,-73.9610244,clinic,Pain Physicians NY
+40.7024335,-73.8909146,clinic,
+40.7451986,-73.9764433,,Gopuff
+40.6066315,-73.98919,clinic,
+40.7446445,-73.9800632,clinic,NYU Fink Children's Ambulatory Care Center
+40.8094157,-73.9589337,,Apple Tree Supermarket
+40.5923204,-74.0684135,clinic,Prominis Medical Office
+40.7594601,-73.8298417,pharmacy,Duane Reade
+40.6193357,-74.0697848,fuel,Speedway
+40.7304343,-73.948109,fuel,Sonamax
+40.8116962,-73.9252799,clinic,DDI
+40.5862476,-73.8164846,police,NYPD 100 Precinct
+40.6808856,-73.977239,,SFI Grill & Deli
+40.7239975,-73.993515,clinic,Medrite Urgent Care
+40.7076397,-74.0055749,,7-Eleven
+40.7299609,-73.9905041,pharmacy,CVS Pharmacy
+40.7062265,-73.9225691,,Hana Natural
+40.7089893,-74.0055485,,76
+40.7466228,-73.8921189,clinic,CityMD
+40.8268934,-73.9497877,clinic,CityMD
+40.7667231,-73.9128808,clinic,Fatima Medical
+40.7649382,-73.8224665,pharmacy,Rite Aid
+40.6927316,-73.9935774,clinic,Brooklyn Gynecology Center
+40.7419686,-73.9861819,clinic,Manhattan Dermatology Specialists
+40.7974623,-73.937656,clinic,Iris House
+40.7176712,-73.9404821,,Amir
+40.7277598,-73.9987159,,Morton Williams
+40.7733433,-73.9598763,pharmacy,Duane Reade
+40.7702457,-73.9181796,,Astor Deli & Market
+40.6099172,-73.9605724,clinic,NYU Langone Levit Medical
+40.73515,-73.9745164,fuel,BP
+40.7420154,-73.9805787,,7-Eleven
+40.7554209,-73.9413164,,Real Gourmet Deli
+40.722136,-73.9969948,pharmacy,Duane Reade
+40.7583876,-73.9626344,,Dawn to Dusk Convenience & Smoke Shop
+40.712797,-73.9409228,,Day n' Night Deli
+40.6399572,-74.0158677,clinic,Family Medical Center
+40.6831743,-73.9732439,clinic,Juno
+40.7457391,-73.9034723,,Stop N' Go
+40.74799,-73.9767387,,Taste Of Delicatessen
+40.7534469,-73.9960216,fast_food,B&W Deli & Pizzeria
+40.7478368,-73.9563744,,Prestige Marketplace
+40.7250466,-73.9944794,pharmacy,CVS Pharmacy
+40.6724579,-73.8428904,fuel,Sunoco
+40.6771984,-73.9834527,,MG Deli & Grill
+40.707805,-73.8978066,,Ridgewood Farm Market
+40.6976891,-73.9079819,,Green Basket
+40.7370356,-73.979315,pharmacy,CVS Pharmacy
+40.7377761,-73.9800976,,Morton Williams
+40.7543321,-73.7088257,hospital,Katz Women's Hospital
+40.708741,-73.9058028,,City Fresh Market
+40.7067241,-73.9028277,,Forest Deli
+40.7070847,-73.9143906,clinic,Ridgewood Dialysis Center
+40.7044021,-73.9106361,,Blessings Deli and Grocery
+40.7054349,-73.8961566,,7-Eleven
+40.7041103,-73.8955543,,Superior Deli
+40.8508655,-73.9386101,,Jin's Superette
+40.6155304,-74.02284,clinic,SUNY Downstate at Bay Ridge
+40.6390874,-73.9485642,clinic,NewYork-Presbyterian Brooklyn Methodist Hospital
+40.6251562,-73.9913844,clinic,NewYork-Presbyterian Brooklyn Methodist Hospital
+40.7322018,-73.9821777,clinic,Nao Medical
+40.6717772,-73.8953137,clinic,"Gotham Health, East New York"
+40.7084479,-73.8982648,,Fresh Pond Express Deli
+40.7320821,-73.9543806,clinic,Manhattan Avenue Health Center
+40.765164,-73.9526899,hospital,Hospital for Special Surgery
+40.8606848,-73.8959688,clinic,Union Community Health Center
+40.6707263,-73.7738798,,Malek Deli
+40.7464408,-73.8932166,fuel,Sunco
+40.7539725,-73.8051456,fuel,Exxon
+40.7549376,-73.8931009,clinic,New York Presbyterian
+40.704625,-73.916359,clinic,Urgent Care for Kids
+40.7137464,-73.9013587,clinic,Centers Urgent Care
+40.7148734,-73.9010083,,St Mark Deli & Grocery
+40.6973869,-73.9354875,clinic,After Hours Project
+40.6920815,-73.9269282,clinic,After Hours Project
+40.7073437,-73.897638,pharmacy,Wallgreen's
+40.6700708,-73.9857566,clinic,CityMD
+40.7836811,-73.9480748,,Candy Shop
+40.7105762,-74.0163998,,Gristedes
+40.7023258,-73.9321947,police,NYC Housing Police #3
+40.6769586,-73.9688868,,Vanderbilt Convenience
+40.7433879,-73.9231074,pharmacy,CVS Pharmacy
+40.8223746,-73.8854836,fuel,BP
+40.8859831,-73.8617891,pharmacy,Rite Aid
+40.6952547,-73.9036651,,Wyckoff Deli
+40.5803583,-73.9858743,fuel,Shell
+40.7862582,-73.950822,clinic,CityMD
+40.7108437,-73.9456448,,Alzanam Deli
+40.7781479,-73.9512383,pharmacy,CVS Pharmacy
+40.804048,-73.9342033,hospital,New York Proton Center
+40.673793,-73.9826426,,Deli Time
+40.6430023,-73.9785967,,Carnival Fruits and Vegetables
+40.6834506,-73.9792216,,44 Deli & Grill
+40.705192,-73.9208966,,66 Organic Mini Market Corp
+40.7041266,-73.9192197,,Express Deli Wyckoff
+40.7036685,-73.918501,,Marinello's Gourment Deli
+40.6881157,-73.9199549,,Prince Broadway Deli
+40.7043537,-73.9240388,,Garden Deli and Grill
+40.7029179,-73.9172604,,Top City Gourmet
+40.7040339,-73.9125532,,Francisco Deli & Grocery
+40.785535,-73.9495663,clinic,Northwell Health-GoHealth Urgent Care
+40.6740594,-73.9862247,clinic,NewYork-Presbyterian Medical Group Brooklyn
+40.7910824,-73.9430148,,City Fresh Market
+40.73435,-74.0059799,pharmacy,Rite Aid
+40.6705688,-73.9888091,,Metro Gourmet
+40.6167047,-73.9928412,clinic,Immediate Care Medical Walk-In of Benssonhurst
+40.7825394,-73.9573868,pharmacy,Duane Reade
+40.7779735,-73.9565065,pharmacy,Duane Reade
+40.6158314,-73.9932962,,Stop & Save Deli Inc
+40.7688374,-73.9591103,clinic,VRMED
+40.6792351,-73.995389,,Smith Street Grocery Convenience
+40.8712688,-73.914705,,Park Terrace Deli
+40.7431468,-73.9218557,,7-Eleven
+40.7435193,-73.924469,,New Castle Deli Grill
+40.7434967,-73.9241307,,Ali NY Convenience II
+40.6942765,-73.9187258,,Central Grocery Store
+40.7802091,-73.9498026,,Amazing Store & Smoke Shop
+40.7102667,-73.7944858,,Premium Supermarket
+40.6680316,-73.9808324,clinic,Fem Gym
+40.7037578,-73.9308353,,Dominguez Grocery & Deli
+40.6975024,-73.9323025,,Best Deli Grocery Grill
+40.6800059,-73.9971888,,Om Organic
+40.7861214,-73.9511503,,786 Candy Store
+40.6064031,-73.9605551,hospital,cardiology
+40.7800934,-73.9467972,,First on First Deli & Grill
+40.6896604,-73.986441,clinic,Century Medical & Dental Center
+40.7688866,-73.958037,pharmacy,CVS Pharmacy
+40.5827938,-73.9597642,fuel,Mobil
+40.6688062,-73.9794093,clinic,NewYork-Presbyterian Brooklyn Medical Pavilion
+40.6614329,-74.0007185,,Rossman Farms
+40.6235987,-74.0324402,clinic,Ophthalmology & Cornea of Brooklyn
+40.6128573,-74.0006272,,Jupiter Grocery
+40.6126267,-74.0004814,,Not Only Bagels
+40.5816642,-73.9567085,clinic,Davita Kidney Care
+40.7778,-73.9489395,,7-Eleven
+40.7598261,-73.9675813,pharmacy,Duane Reade
+40.7543579,-73.9866072,pharmacy,CVS Pharmacy
+40.7771603,-73.9504427,clinic,CityMD
+40.8074566,-73.9452125,clinic,CityMD
+40.7668516,-73.9629549,clinic,CityMD
+40.78936,-73.9752933,clinic,CityMD
+40.7673053,-73.9837866,clinic,CityMD
+40.7550272,-73.9681765,clinic,CityMD
+40.7581875,-73.9916334,clinic,CityMD
+40.758158,-73.9915577,,7-Eleven
+40.7476648,-73.9764836,clinic,CityMD
+40.751841,-73.9939691,clinic,CityMD
+40.7422994,-73.9909359,clinic,CityMD
+40.7383643,-73.9824544,clinic,CityMD
+40.7815029,-73.9517221,clinic,Optum Urgent Care
+40.7368952,-73.9790601,clinic,ProHEALTH Urgent Care
+40.7184005,-73.9869294,clinic,CityMD
+40.7147175,-74.0071909,clinic,CityMD
+40.7103743,-74.0082481,clinic,CityMD
+40.736274,-73.994694,clinic,CityMD
+40.7313953,-74.0014331,clinic,CityMD
+40.7735939,-73.9520108,clinic,Northwell Health-GoHealth Urgent Care
+40.7764585,-73.9829223,clinic,Northwell Health-GoHealth Urgent Care
+40.7767658,-73.9827194,,Gourmet Square Mini Market & Deli
+40.7313955,-73.9940595,clinic,Northwell Health-GoHealth Urgent Care
+40.7447007,-73.9966253,clinic,Northwell Health-GoHealth Urgent Care
+40.7842132,-73.9486996,clinic,AdvantageCare Physicians Medical Office
+40.734864,-73.9897882,clinic,Mount Sinai Urgent Care Center
+40.7540692,-73.969345,clinic,MedRite Urgent Care
+40.6389413,-74.0226488,police,NYPD 68th Precinct
+40.7308592,-73.9952179,,Space Market
+40.7773764,-73.9518857,clinic,MedRite Urgent Care
+40.5955492,-73.951055,clinic,Ocean Medical Plaza
+40.5996696,-73.9965176,hospital,Back to health
+40.7201436,-73.9995201,,Soho Olive Branch
+40.6423424,-74.016546,clinic,Sunrise Medical Center
+40.6955686,-73.9465003,,894 Deli & Grill
+40.6772986,-73.9833854,,Union Deli
+40.7437935,-73.9150448,clinic,"The Psychological & Stress Management, P.C."
+40.7299825,-73.9540272,,Mr. Berry
+40.7673751,-73.9531247,,Green Gourmet
+40.7139319,-73.9510327,,Hana Food
+40.6767721,-73.8193536,,Minimart
+40.7154219,-73.9932075,,Highline
+40.7963986,-73.9684017,,7-Eleven
+40.7650067,-73.9138876,,Beer Barn
+40.6840335,-73.9757444,,Stop & Shop
+40.6135438,-74.1585968,clinic,Allure Plastic Surgery
+40.6436453,-73.9698619,,Corner Town
+40.6820987,-73.974246,clinic,NewYork-Presbyterian Medical Group Brooklyn
+40.7885031,-73.9534103,,Q-MarQet
+40.7980465,-73.9336223,fuel,BP
+40.6989449,-73.9223474,,"Adonis Grocery, Inc."
+40.6978847,-73.9210398,,Sam's Deli and Grill
+40.6889198,-73.9052488,,Fire House 2 Deli Grocery
+40.6893383,-73.9060188,,Stop One Supermarket
+40.6016008,-73.9945286,hospital,Cohen Children's Northwell Health
+40.6165652,-74.024444,hospital,Girling Health Care
+40.7477601,-74.0006469,,Empire Grocery & Deli
+40.6823196,-73.9619667,,Sam's Natural Plus
+40.6833864,-73.9657446,clinic,Start Treatment & Recovery Centers
+40.6856975,-73.9910157,,Smith Deli & Juice Bar
+40.7292277,-73.9869875,,Village Farm Grocery
+40.7632036,-73.9672656,pharmacy,Duane Reade
+40.7480792,-73.9874259,,Herald Smoke Shop
+40.724017,-73.9847775,,Key Food
+40.7199599,-73.9891431,,Corner Grocers
+40.6702394,-73.9579638,,Wise Deli & Grill
+40.586336,-73.9467378,clinic,NY Center
+40.6078075,-73.9642165,hospital,Midwood medical Plaza
+40.8161856,-73.895512,police,New York City Police Department - 41st Precinct
+40.6632575,-73.7337864,clinic,Diabetic Foot Care
+40.7255007,-73.9937026,clinic,Planned Parenthood
+40.6944378,-73.8274143,clinic,Koster Eyecare & Laser Center
+40.667683,-73.7813082,,7-Eleven
+40.8137417,-73.9445114,clinic,Doctors Medical Group
+40.8048134,-73.9402618,clinic,Foot Center of New York
+40.6597765,-73.9810857,,Mr. Kiwi
+40.7047398,-73.7970366,clinic,CityMD
+40.7040628,-73.798749,clinic,MedRite Urgent Care
+40.6716249,-73.9574554,,Shorty Deli
+40.6743321,-73.8428439,fuel,Speedway
+40.7048111,-73.7978516,clinic,USA Vein Clinics
+40.705023,-73.7982834,clinic,Firehouse Health Center
+40.7455561,-73.8904418,clinic,Urology
+40.7455766,-73.8900304,clinic,Fidelity Physical Therapy & Rehabilitation Center
+40.6850221,-73.9914472,clinic,Lenox Hill Radiology
+40.6861467,-73.9823921,clinic,CityMD
+40.6147277,-73.9948519,clinic,Pediatrics
+40.7427298,-73.9785154,clinic,Translational Research Building
+40.7529952,-73.8214302,,Mars Deli
+40.7410257,-73.9817793,,Third Deli & Grill
+40.6197261,-73.9934833,,Champs Deli & Grocery
+40.7622981,-73.9602545,clinic,USA Vein Clinic
+40.6705102,-73.9553301,clinic,Doral Health & Wellness
+40.6705568,-73.9555488,clinic,One Brooklyn Health
+40.7417149,-73.9971089,,Pharmacy
+40.6622877,-73.9628399,clinic,Medical Plaza
+40.7419623,-73.9861752,clinic,Manhattan Primary Care
+40.7391291,-73.9947881,clinic,Dr. Nabeel Chaudhary
+40.7782525,-73.9582796,clinic,Dr. Nabeel Chaudhary
+40.54543,-74.159304,clinic,GoHealth Urgent Care
+40.5430478,-74.1642083,clinic,ProHEALTH Urgent Care
+40.6892969,-73.9823403,clinic,Brooklyn Health Medical Alliance Urgent Care
+40.6860038,-73.9820237,clinic,AHF Healthcare Center
+40.7988122,-73.952602,clinic,Metropolis Medical
+40.7076092,-73.9646417,clinic,Williamsburg Family Health Center
+40.7090799,-73.9642447,clinic,Quality Health Center
+40.5902749,-73.9739481,,United Express
+40.7337373,-73.7240637,clinic,
+40.7327527,-73.7324521,clinic,Knickerbocker Medical Care Clinic
+40.771189,-73.9532527,clinic,Weill Cornell Internal Medicine Associates at Wright
+40.7501648,-73.9400734,clinic,CityMD
+40.7752124,-73.9121192,clinic,CityMD
+40.7446199,-73.9918105,,Sunac Fancy Food
+40.5598355,-74.1665314,pharmacy,Walgreens
+40.7343522,-73.8495874,clinic,Forest Hills Medical Services
+40.7343565,-73.8495698,clinic,VIVA EVE: Fibroid Treatment Specialists
+40.5900745,-73.9734097,clinic,Century Medical & Dental Center
+40.6015021,-73.9610867,clinic,Stem Cell Therapy
+40.601479,-73.9610204,clinic,TRi Physical Therapy of Brooklyn
+40.7553333,-73.9819007,clinic,Sports Injury & Pain Management Clinic of New York
+40.7637153,-73.9710106,clinic,ReBalance NYC
+40.6933272,-73.9909626,clinic,Integrative Wellness NY
+40.7781755,-73.9580605,clinic,Dr. Susan Bard
+40.7799958,-73.9562565,clinic,New York Cardiac Diagnostic Center
+40.7654985,-73.9806503,clinic,New York Cardiac Diagnostic Center
+40.7072132,-74.0124635,clinic,New York Cardiac Diagnostic Center
+40.6015272,-73.9610706,clinic,Suboxone Treatment Clinic
+40.7302248,-73.8605538,clinic,Suboxone Treatment Clinic
+40.8358294,-73.8329761,clinic,Suboxone Treatment Clinic
+40.7796153,-73.9476013,,1 Ave Gourmet Deli
+40.7231395,-73.9953781,,Soho Garden
+40.7640651,-73.9670374,,Smiley's
+40.6546861,-74.0043445,,Habibi's
+40.6147286,-74.0344548,,Marine Deli & Grocery
+40.6083594,-74.004119,clinic,Bensonhurst Family Health Center
+40.7780682,-73.9556027,clinic,New York Medical Imaging Associates
+40.7189038,-73.7639372,clinic,
+40.7391225,-73.9947326,clinic,Dr. Shawn Khodadadian
+40.7118677,-73.7902725,clinic,Jamaica Hillside Dialysis
+40.736889,-73.9811695,clinic,Pain Management NYC
+40.7486058,-73.9798917,clinic,Park Avenue Sinus & Sleep Center
+40.6166513,-73.9789215,clinic,Quality First Urgent Care
+40.7759675,-73.9599058,clinic,"Monica Tadros, MD, FACS"
+40.7779526,-73.9536097,clinic,Weill Cornell Medical Associates
+40.7991697,-73.9631565,,Duke Ellington Deli
+40.7173097,-74.0007245,clinic,139 Centre
+40.7720119,-73.9608641,,Freedom Market
+40.7863156,-73.9453305,,Mr. Moe's Gourmet Deli
+40.6825123,-73.9664858,clinic,Sunrise Medical Group
+40.7064388,-74.0059187,,The Best of New York Food
+40.6933792,-73.9648262,clinic,MedRite Urgent Care
+40.5821806,-73.837521,clinic,
+40.5808302,-73.8373738,police,
+40.5960993,-73.9848579,,BP Shop
+40.6102778,-74.0068821,fuel,Bp
+40.7458851,-73.9018467,,Fresh n Save
+40.7750356,-73.958644,clinic,CityMD
+40.7293584,-73.9782666,,Brother's Candy & Grocery
+40.75978,-73.9688719,clinic,City Facial Plastics
+40.600928,-73.9917457,,Vucciria Food & Gourmet
+40.7983879,-73.9324463,clinic,Clinica Del Barrio
+40.7722534,-73.9904013,,Morton Williams
+40.7725099,-73.9901197,clinic,Baker Health
+40.8018746,-73.9436715,clinic,Family Health Center Of Harlem
+40.7272936,-73.853759,clinic,Mount Sinai Doctors
+40.7272166,-73.7138399,clinic,NY Urgent Care
+40.5757957,-73.9702474,clinic,Seabreeze Medical
+40.7478175,-73.9931701,clinic,City MD
+40.6750153,-73.9601783,,Park Place Deli
+40.7645664,-73.9300765,clinic,Advantage Care Physicians
+40.5162121,-74.2340418,clinic,Pro Health Circle Urgent Care
+40.5241265,-74.234387,,7-Eleven
+40.5596302,-74.1627217,pharmacy,CVS Pharmacy
+40.741016,-73.9042268,clinic,Raveco Medical
+40.6435689,-73.7971254,police,Port Authority Police Department
+40.6530161,-73.8088553,clinic,JFK MedPort
+40.6934555,-73.9814513,,Fleet Organic Market
+40.7458228,-73.899973,,Sun Convenient Store
+40.7906888,-73.9532068,clinic,The Lauder Family Cardiovascular Center
+40.7120471,-73.7317808,clinic,DaVita Dialysis Center Of Queens
+40.585981,-73.9532895,clinic,
+40.790385,-73.9533564,clinic,The Leona M. and Harry B. Helmsley Charitable Trust Center for Electrophysiology
+40.7396813,-73.9822869,,Third Ave Deli & Grill
+40.718289,-73.9582489,hospital,Mount Sinai Doctors - Williamsburg
+40.7180475,-73.9582755,clinic,CityMD Williamsburg Urgent Care - Brooklyn
+40.7391598,-73.9948278,clinic,Dr. Fernando Mariz
+40.7781578,-73.958036,clinic,Dr. Fernando Mariz
+40.7636356,-73.9139556,clinic,
+40.5795989,-73.9729016,,NetCost Market
+40.596286,-73.9848614,fuel,BP
+40.7538189,-73.969016,,Morton Williams
+40.764824,-73.9789137,,Morton Williams
+40.7701888,-73.9571223,,East Side Grocery
+40.588988,-74.1667163,clinic,PM Pediatrics
+40.7756227,-73.9560593,,Daona
+40.7597665,-73.9203753,clinic,Northwell Health-GoHealth Urgent Care
+40.5330778,-74.2391529,hospital,Richmond University Medical Center
+40.5289734,-74.2349388,,ShopRite
+40.553637,-74.1441529,clinic,Northwell Health GoHealth Urgent Care
+40.7967632,-73.9377254,,7-Eleven
+40.7391319,-73.9946826,clinic,Dr. Susan Bard
+40.7781487,-73.957965,clinic,Dr. Susan Bard
+40.778128,-73.9580066,clinic,Dr. Mohammad Rimawi
+40.7391005,-73.9946765,clinic,Dr. Mohammad Rimawi
+40.6961065,-73.9934728,clinic,Dr. Raj Raval
+40.8273388,-73.925339,clinic,CityMD Urgent Care
+40.6987716,-73.8150526,clinic,DaVita Kidneycare
+40.6716947,-73.833756,clinic,Aqueduct Mass Vaccination Site
+40.6835038,-73.9677243,,Wholesome Farms Market
+40.782686,-73.9479938,,Diamond Mart
+40.7647165,-73.9145185,,Aldar
+40.7464357,-74.0016428,clinic,CityMD
+40.7914963,-73.9519531,clinic,Internal Medicine Associates
+40.6683169,-73.990714,clinic,Dosik Hematology / Oncology
+40.7576424,-73.8273639,clinic,Advantage Care Physicians
+40.752811,-73.8229054,clinic,Charles B Wang Community Health Center
+40.7529248,-73.8228883,clinic,The Soundheimer Family Campus
+40.7537894,-73.9868326,clinic,CityMD
+40.7156158,-74.00534,,7-Eleven
+40.7154462,-73.8332177,clinic,Musculoskeletal wellness clinic
+40.715833,-73.8337355,clinic,USA Vein Clinic
+40.7222357,-73.8507501,clinic,New York Preventative Health Center
+40.783002,-73.9511602,,Vegan Deli
+40.7204683,-73.8452938,clinic,CityMD
+40.7665005,-73.9226571,clinic,
+40.694816,-73.9939188,clinic,CityMD
+40.625472,-74.0244533,,Sam's Deli
+40.6885804,-73.9573336,,Anwar Convenience
+40.7030772,-73.8148316,clinic,New York Radiation Ocology
+40.7813056,-73.9495717,,Yorkville Deli Market
+40.7184986,-73.8366041,clinic,Forest Hills Medical Center
+40.7186919,-73.8369315,clinic,New York Presbyterian
+40.6729247,-73.7885844,fuel,49 Quality 24h
+40.7197997,-73.9877293,,SX Gourmet
+40.634806,-74.0236536,,Rajouri 24 Hours Store
+40.6839835,-73.9788547,,Downtown Organic Market
+40.6925168,-73.9871091,clinic,Intermed Care PC
+40.7191541,-73.8372031,clinic,Forest Urgent Care
+40.6366017,-74.0284416,,Ridge Market
+40.703953,-73.941724,clinic,La Salud Medical Center
+40.7186764,-73.9894543,,Greenstar Foods
+40.8469146,-73.8327448,,Pruzzo's Supermarket
+40.7256759,-74.0042932,pharmacy,CVS Pharmacy
+40.6497263,-73.9607315,,Finest Smoke Shop & Deli
+40.650777,-73.9589827,clinic,CityMD
+40.7175655,-73.9954946,clinic,Excelsior Medical
+40.8389315,-73.8854374,clinic,MMG West Farms
+40.7790049,-73.9475479,,Eastside Grocery
+40.7609689,-73.9845913,pharmacy,CVS Pharmacy
+40.713108,-73.8768064,clinic,Metrowell Health Center
+40.7308352,-73.8873995,clinic,CityMD
+40.7172232,-73.9856565,clinic,Joan H. and Preston Robert Tisch Center
+40.7472617,-73.9415204,,Pom's Gourmet Market
+40.7502568,-73.9402655,,Green Valley
+40.7877103,-73.9443244,clinic,Zipcare Urgent Care
+40.6189094,-73.9906199,clinic,CityMD
+40.6659827,-73.9565827,clinic,Proxi Medical Urgent Care
+40.6658341,-73.9566371,clinic,Bedford Avenue Family Health Center
+40.6588979,-73.8402573,fuel,Speedway
+40.6744847,-73.8426565,,Speedway
+40.5786422,-73.9855251,fuel,Mobil
+40.5786148,-73.9846588,,Speedway
+40.5787283,-73.9849082,fuel,Speedway
+40.6446915,-74.0147461,,Quick Deli
+40.6008257,-73.9344067,fuel,Mobil
+40.6672653,-73.8107383,fuel,Speedway
+40.7328298,-73.9579297,,Franklin Corner Cafe
+40.7740666,-73.9841113,,Market C
+40.6447156,-74.0109279,clinic,CityMD
+40.6071029,-74.1611878,clinic,ProHEALTH Circle Urgent Care
+40.6803288,-73.9506843,clinic,ModernMD
+40.7879413,-73.9751099,pharmacy,CVS Pharmacy
+40.8007532,-73.9471583,clinic,Physical Therapy of Harlem
+40.7608817,-73.9979879,,7-Eleven
+40.7901641,-73.9475858,,103 Deli & Grocery
+40.7864405,-73.9487376,,Heavenly Market
+40.7369053,-73.9813693,clinic,Gramercy Diagnostic Radiology
+40.737007,-73.9813015,clinic,East Side Endoscopy
+40.7776873,-73.9456083,,Heavenly Market
+40.7885046,-73.9411529,,Garden Gourmet
+40.6951463,-73.9435287,,B&G Grocery
+40.7819992,-73.9539501,,GoPuff
+40.6939224,-73.9432633,,Naf Deli & Grocery
+40.7425065,-73.9787762,clinic,Concorde Medical Group
+40.7389332,-73.979898,,Empire Gourmet
+40.8625669,-73.8405579,clinic,Mace Avenue Medical
+40.7393516,-73.9210465,,Mars Deli
+40.746923,-73.9859769,clinic,New York Hair Transplant Center
+40.6551619,-73.83837,fuel,Lukoil
+40.6290957,-74.0260086,clinic,Well Life Medical Consulting
+40.8289109,-73.8248108,clinic,Throgs Neck Urgent Medical Care
+40.7098685,-73.7958823,,Mannan Supermarket
+40.8465453,-73.8399746,hospital,Bronx Psychiatric Center
+40.7770975,-73.9502943,,365 Family Deli
+40.7643193,-73.9618767,,7-Eleven
+40.7028947,-73.8972512,clinic,Ridgewood Medical Services
+40.7473022,-73.8943206,clinic,NYC Health + Hospitals/Gotham Health
+40.747903,-73.8947032,clinic,Western Care PC
+40.6763161,-73.9835157,clinic,Medrite Urgent Care
+40.7331856,-73.8571835,clinic,Rego Park Medical Center
+40.547526,-74.1668736,clinic,"Melissa Lanza, RN, MS, FNP-BC"
+40.5468906,-74.1657633,clinic,Northwell Health University Physicians
+40.7506733,-73.9748159,pharmacy,CVS Pharmacy
+40.6417982,-73.9821727,clinic,Prime Medical Care
+40.6426843,-73.9800841,,Bangla Nagar Supermarket
+40.7897185,-73.9406863,,East 106 Deli & Grocery
+40.6427684,-73.9790547,clinic,Swift Urgent Care
+40.70714,-74.0077006,clinic,Physical Therapists
+40.7077863,-74.0074924,clinic,NY Ketamine Infusions
+40.7073968,-73.7959852,clinic,UMD Urgent Care
+40.654502,-73.9105523,clinic,Brookdale Medical Services
+40.6455653,-74.0203724,,King Deli & Grill
+40.6496723,-74.0129613,clinic,CY Medical Care
+40.5663678,-74.1114487,,ShopRite
+40.6353121,-74.0352471,clinic,Maiden Lane Medical
+40.6362317,-74.0260334,clinic,Heights Medical Center
+40.638778,-74.0223776,police,NYPD Emergency Service Unit Squad 6
+40.7441499,-73.9748456,,NY Grill & Deli
+40.7627093,-73.9897468,clinic,MiDoctor Urgent Care
+40.8194339,-73.912171,clinic,MMG Via Verde
+40.6978843,-73.9942217,hospital,Downtown Pain Physicians Of Brooklyn
+40.77023,-73.9920935,clinic,Century Medical & Dental Center
+40.5788457,-73.956189,clinic,Medical & Radiology Center
+40.718175,-73.8034177,,Olive Deli & Cafe
+40.6153279,-74.0340362,clinic,Vantage Medical Group
+40.6065301,-73.7543886,fuel,BP
+40.6494866,-73.962687,clinic,Church Medical Offices
+40.6394212,-73.9877473,clinic,DaVita Dialysis
+40.7514263,-73.9961731,pharmacy,Duane Reade
+40.8227754,-73.9422037,,Super Foodtown
+40.7826085,-73.9514556,,East Ville Market Place
+40.8582574,-73.8990678,clinic,Multi Speciality Medical Care Center
+40.8558492,-73.900524,clinic,Metro Urgicare
+40.7370842,-73.9841803,clinic,Passport Health Gramercy Park Travel Clinic
+40.8585811,-73.9029822,clinic,Morris Heights Health Center
+40.8634365,-73.8959472,clinic,
+40.8625379,-73.9015129,clinic,CityMD
+40.8622079,-73.9017365,clinic,Sheldon Medical Care PC
+40.689007,-73.9824912,clinic,Brooklyn Health Medical Alliance
+40.715504,-73.996766,clinic,Insight Comprehensive Medical PC
+40.6531152,-73.8862559,fuel,Conoco
+40.6529058,-73.8867069,fuel,BP
+40.8539989,-73.9074739,clinic,Omega
+40.8567048,-73.9046853,clinic,DaVita Dialysis
+40.5877314,-73.9494753,fuel,BP
+40.6637096,-73.9511607,clinic,dock.
+40.5216395,-74.2364487,clinic,Island Reproductive Services
+40.5403752,-74.1760837,clinic,DaVita Dialysis
+40.5819426,-73.9606265,,Flaming Grill & Juice Bar
+40.7212553,-73.8481375,clinic,Achieve Beyond
+40.7206766,-73.8465473,clinic,
+40.6142923,-74.1780658,clinic,CVVC Cardi Vascular & Vein Center of N.Y.
+40.7158723,-73.9600453,pharmacy,Duane Reade
+40.64258,-74.0127243,clinic,Sincere Urgent Care
+40.768828,-73.9927766,hospital,Mount Sinai
+40.786993,-73.9780184,clinic,Weill Cornell Medicine Primary Care
+40.7933224,-73.9743032,clinic,Passport Health Upper West Side Travel Clinic
+40.6520939,-73.9556556,clinic,"Linden West Medical, PC"
+40.7513603,-73.8633327,clinic,Metropolitan Vein and Aesthetic Center
+40.6516066,-73.9592099,clinic,Dock
+40.6862164,-73.9712002,clinic,55 Greene Avenue Medical Suites
+40.6277269,-73.9570524,clinic,Millennium Dialysis
+40.6277345,-73.9569852,clinic,Millenium Ambulatory Surgical Center
+40.7218452,-73.848803,clinic,
+40.6405232,-74.0146016,clinic,Family Medical Care
+40.7182093,-73.9995203,clinic,Mount Sinai Medical Center Chinatown
+40.7181648,-73.9995483,clinic,Rendr
+40.6870223,-73.9798483,clinic,MedRite Urgent Care
+40.7336445,-73.9997736,clinic,Medrite Urgen Care
+40.7187687,-73.8415852,clinic,Hear USA
+40.7340708,-73.9808118,,One's Convenience & Smoke Shop
+40.6232018,-74.1485547,,ShopRite
+40.6270192,-74.1658776,,7-Eleven
+40.5530384,-74.2182221,clinic,Healthcare Associates in Medicine
+40.5342646,-74.1535018,clinic,Richmond University Medical Center
+40.6426259,-74.0120413,clinic,Shahla Mallick Medical Office
+40.6340215,-74.020973,clinic,Bin Omar Health Center
+40.7522816,-73.9297461,,34th Street Grab-N-Go
+40.7417547,-73.8744142,clinic,Corona Family Health
+40.6084064,-74.004856,,17 Gourmet Deli & Grill
+40.6305325,-74.022041,clinic,Dabbas Medical
+40.6302169,-74.0225134,clinic,Family Health Care & Cardiac Center
+40.7464456,-73.8912049,,Prince Gourmet Deli
+40.7121932,-73.9629389,,Jubilee Marketplace
+40.6078458,-73.9725517,clinic,Rogoshin Institute
+40.7782151,-73.954991,clinic,Northwell Health Physician Partners
+40.6992688,-73.8327475,clinic,Pain Management Sports Medicine
+40.587743,-73.9549398,clinic,"United Diagnostic Services, LLC"
+40.7791801,-73.7791862,clinic,PM Pediatrics
+40.7038727,-73.9195053,clinic,
+40.7059592,-73.8964932,,
+40.7509498,-73.9861869,clinic,L.A. FUE Hair New York
+40.7094807,-73.951034,,Organic Deli
+40.6828192,-74.0067687,clinic,Red Hook Family Health Center
+40.8518692,-73.9045982,clinic,Union Community Health Center
+40.7182159,-73.940643,fuel,Spirit
+40.6632676,-73.995474,clinic,Passport Health Brooklyn Travel Clinic
+40.6228795,-74.0251666,,Deli On 5th
+40.7018358,-73.8835403,clinic,
+40.7061827,-73.7967061,clinic,Community Healthcare Network
+40.6970236,-73.8057928,clinic,Community Healthcare Network
+40.833239,-73.9426093,clinic,Community Healthcare Network
+40.7216708,-73.9851561,clinic,Community Healthcare Network
+40.8011884,-73.9495007,clinic,Community Healthcare Network
+40.6699624,-73.8814081,clinic,Community Healthcare Network
+40.6589755,-73.9502525,clinic,Community Healthcare Network
+40.75973,-73.7697302,pharmacy,CVS Pharmacy
+40.8551813,-73.8482737,police,Police Health And Hospitals
+40.7410701,-73.9834249,,M&M Gourmet Deli & Grill
+40.5806638,-73.9666985,,Zee Deli & Grill
+40.7157333,-74.0094096,clinic,MEDRITE Urgent Care
+40.6878958,-73.9195301,clinic,Broadway Community Family & Children Health Center
+40.68847,-73.9199259,clinic,Betances Health Center
+40.690819,-73.9240134,clinic,AG Urgent Care
+40.7081721,-73.8626197,clinic,
+40.6669498,-73.9877382,clinic,Maiden Lane Medical
+40.6086324,-73.9724004,clinic,Fresinius Kidney Care
+40.7059872,-74.0125863,clinic,Passport Health New York - Financial District Travel Clinic
+40.7064917,-74.0112726,clinic,CityMD
+40.7152881,-73.807478,clinic,Passport Health Jamaica Travel Clinic
+40.7152715,-74.0083889,clinic,DC37 Health Center
+40.7212313,-73.8480826,clinic,Summit Health
+40.6752876,-73.8963758,clinic,AdvantageCare Physicians East New York Medical Office
+40.720573,-73.8427964,clinic,
+40.5763852,-73.971144,clinic,Baker Health
+40.5764097,-73.9714257,,Cibo Market
+40.7148019,-74.0073766,clinic,Ferny
+40.7484965,-73.9758723,clinic,One Medical
+40.7086487,-73.7802162,clinic,Welcome Accupuncture
+40.7302989,-73.7430245,clinic,Northwell Health Dialysis Center
+40.7164051,-74.0099519,clinic,Pediatric Opthalmic Consultants
+40.6867202,-73.8245955,clinic,Modern MD Urgent Care
+40.7629665,-73.9243541,clinic,
+40.7499295,-73.9374694,,Hudson Food Market
+40.7249224,-73.794992,clinic,Alwani Medical Care
+40.733949,-73.7583473,clinic,Better Medical Care
+40.7278364,-73.7476711,,John’s Farm Market
+40.7285229,-73.7461866,clinic,
+40.739958,-73.7865043,clinic,CityMD
+40.7303853,-73.8238918,clinic,Cohen Children's Northwell Health
+40.5874665,-73.9601457,,Z Deli & Grill
+40.5677695,-74.1108653,clinic,Northwell GoHealth Urgent Care
+40.7678967,-73.9599547,clinic,ThrIVewell Infusion
+40.6025766,-74.1624577,clinic,Genesis Fertility & Reproductive Medicine
+40.6913938,-73.9868388,clinic,CityMD
+40.742853,-73.825743,clinic,
+40.7399145,-73.7916405,clinic,
+40.7390914,-73.7948475,clinic,
+40.6117975,-74.1574633,clinic,Northwell GoHealth Urgent Care
+40.6104367,-74.1604763,clinic,Dialysis Clinic Inc.
+40.6101549,-74.1607051,clinic,Kofinas Fertility Group
+40.7996528,-73.9685906,,Americano Deli
+40.7659053,-73.9558158,clinic,Hypertension Center
+40.6098548,-73.962136,clinic,Chai Care
+40.7971251,-73.9703278,clinic,One Medical
+40.790729,-73.9450921,clinic,Helping U Homecare
+40.7692428,-73.9531315,clinic,Hospital for Special Surgery 75th Street Campus
+40.52315,-74.2398014,clinic,Chai Urgent Care
+40.6034995,-74.1317276,clinic,Sincere Medical
+40.6341026,-74.0221423,clinic,Ben Sinai Wellness
+40.8487864,-73.9320975,clinic,181st Street Urgent Care Center
+40.7535099,-73.9864854,clinic,Elevate Egg Donors and Surrogates
+40.7853133,-73.9785266,pharmacy,Cedra Pharmacy
+40.7426229,-73.9171188,clinic,CityMD Urgent Care
+40.7425786,-73.9172819,clinic,Lenox Hill Radiology
+40.7424981,-73.9175053,clinic,Greenpoint Medical Center
+40.7678921,-73.9538621,clinic,Bio Dynamic Orthotics & Prosthetics
+40.7280918,-73.7836726,clinic,Union Medical Urgent Care
+40.7666715,-73.9556804,clinic,ACA Acupuncture & Wellness
+40.7770502,-73.9092815,clinic,Physician Partners
+40.7190581,-73.8422124,clinic,Manhattan Medical Arts
+40.7671394,-73.953981,clinic,"Ambulatory Care Clinic, Hospital for Special Surgery"
+40.7958469,-73.9687558,clinic,Ryan Health Women & Children's
+40.7945594,-73.9711314,clinic,Health East Medical Alliance
+40.7801934,-73.9818594,clinic,Mount Sinai Doctors
+40.5804937,-73.9656107,clinic,Medical Rehabilitation Center
+40.7473742,-73.9444946,clinic,Northwell Health - Gohealth Urgent Care
+40.7956896,-73.9737622,fuel,Mobil
+40.6262447,-74.1321466,clinic,Camelot
+40.6269363,-74.1248406,clinic,Richmond University Medical Center
+40.6288098,-74.1163767,clinic,CityMD
+40.694572,-73.7376895,clinic,Oak St. Health
+40.7696165,-73.9540138,clinic,Hospital for Special Surgery clinic
+40.744742,-73.9917128,clinic,MedRite Urgent Care
+40.8498854,-73.9347049,clinic,CityMD Urgent Care
+40.7389104,-73.7017304,clinic,Quality Medical Provider P.C.
+40.6545055,-74.0045271,,NY Deli Express
+40.6286331,-74.0287777,clinic,Centers Urgent Care
+40.6275303,-74.0295683,clinic,Northwell Health Treat & Release
+40.5886242,-73.9495719,,Ocean Ave Deli & Bagel
+40.8153704,-73.9577427,clinic,City Prime Health
+40.6587213,-73.8912977,fuel,Mobil
+40.6590561,-73.8907217,fuel,BP
+40.7420132,-73.9215805,clinic,43rd Street Family Practice
+40.7486634,-73.9489148,clinic,Passport Health Long Island City Travel Clinic
+40.7886785,-73.9702632,pharmacy,Duane Reade
+40.7740847,-73.9139884,clinic,Astoria Medical Associates
+40.7139002,-73.8313973,clinic,Orlin&Cohen
+40.8014683,-73.9577702,,Park View Market
+40.6985365,-73.9799818,clinic,CityMD
+40.7330239,-73.8550564,clinic,Passport Health Rego Park Travel Clinic
+40.6406109,-74.0754984,clinic,Sun River Health
+40.6975806,-73.967566,clinic,HealthNeed Urgent Care
+40.7572826,-73.7827244,clinic,Main Street Radiology
+40.6166307,-73.9789947,clinic,Brooklyn Surgery Center
+40.6938472,-73.8281005,,Bagh Deli & Grill
+40.7717681,-73.9089458,clinic,Nao Medical
+40.708089,-73.908444,,Fairview Deli & Grocery
+40.7454206,-73.9033299,,Winners Smoke Shop
+40.7461796,-73.8964824,,Saanvi Food Mart
+40.746284,-73.8980539,clinic,MedPro Urgent & Primary Care
+40.5783974,-73.9761269,clinic,NYU Langone Medical Associates
+40.8520377,-73.9331619,clinic,
+40.8093213,-73.951508,clinic,Juno Primary Care
+40.7421091,-73.9826735,,Moon Stage Smoke Shop
+40.7145957,-74.0085001,pharmacy,CVS Pharmacy
+40.6743362,-73.8806978,,Seven Star Express Deli
+40.5828431,-73.9858971,,Citgo
+40.7441102,-73.8576397,clinic,Summit Health
+40.6314352,-73.9682044,clinic,"Best Medical Care, PC"
+40.767009,-73.9547002,clinic,Weill Cornell Medicine
+40.6398666,-73.9677387,clinic,Ditmas Park Wellness
+40.7337413,-73.9946997,clinic,Advanced Headache Center
+40.7645657,-73.955956,hospital,New York Presbyterian Alexandra Cohen Hospital for Women and Newborns
+40.7602226,-73.9963908,clinic,MedRite Urgent Care
+40.7554698,-73.9270928,,Vape & Snacks
+40.6796343,-73.7518987,clinic,RapidMD
+40.5871095,-74.0913084,clinic,GoHealth Urgent Care
+40.5880082,-74.0910445,hospital,Staten Island University Hospital
+40.5851654,-74.089914,clinic,
+40.5842832,-74.0881797,clinic,Center for Women's Health
+40.5840353,-74.0877658,clinic,Ambulatory Behavioral Health Services
+40.583789,-74.0872131,clinic,Island Rehabilitative Services Dialysis Center
+40.8053475,-73.9663219,clinic,Mount Sinai Doctors
+40.6815013,-73.7649694,,127 Grill & Deli
+40.7658078,-73.9136714,clinic,Steinway Family Health Center
+40.8362484,-73.8546458,,Grocery Outlet
+40.7828618,-73.9809544,clinic,Medrite Urgent Care
+40.7291449,-74.004524,clinic,Occupational & Industrial Orthopedic Center
+40.7748046,-73.9561156,clinic,
+40.7627561,-73.8750335,,Express One Deli & Grocery
+40.6091958,-74.0892539,,My Deli
+40.6576634,-73.9504628,clinic,Brooklyn Family Medicine
+40.5951531,-74.0857921,clinic,Richmond Pain Management ASC
+40.577713,-73.9601153,,7-Eleven
+40.5777001,-73.9602422,clinic,CityMD
+40.6172062,-73.9849314,,Radfan
+40.7462075,-73.9160284,,Sunnyside Mini Mart
+40.6270849,-74.0777806,clinic,Staten Island University Hospital
+40.693314,-73.9833812,clinic,One Medical: City Point Brooklyn
+40.8368632,-73.8605525,clinic,CityMD Urgent Care
+40.8371908,-73.8608997,police,Parkchester Police Department
+40.7216747,-73.9958115,clinic,NYC Health + Hospitals/Gotham Health Judson
+40.7648538,-73.9770381,,Merci Market
+40.6118469,-74.1774608,clinic,Veterans Affairs Community Health Center
+40.7017878,-73.9428595,clinic,QCC Services Inc. The PAC Program
+40.705488,-73.9444438,clinic,Williamsburg Health Center
+40.7080364,-73.9288046,clinic,Care for the Homeless
+40.7296266,-73.9543161,clinic,NYC Health + Hospitals/ Gotham Health
+40.7150813,-73.9603858,clinic,Callen-Lorde
+40.7124938,-73.9619407,clinic,Acacia Network
+40.7120701,-73.9442839,clinic,NYC Health + Hospitals/Gotham Health
+40.708163,-73.9606258,clinic,NYC Health + Hospitals/Gotham Health
+40.7295818,-73.9930641,clinic,Clear MD
+40.5105642,-74.2485313,,Cracker Barrel
+40.6358856,-74.0115744,clinic,Rendr
+40.6298663,-74.1087977,clinic,Forest Avenue Primary Care
+40.6251367,-73.9631078,clinic,Brooklyn Eye Surgery Center
+40.6075401,-73.9882321,clinic,Medical Plaza
+40.5933647,-74.0866104,clinic,Ben Sinai Medical Center
+40.5738303,-74.1059135,police,NYPD Highway Patrol Unit 5
+40.5741603,-74.1055894,police,NYPD 122nd Precinct
+40.5747173,-74.1049037,clinic,Northwell Health Labs
+40.5817374,-74.0981316,clinic,Chai Urgent Care
+40.6889343,-73.9584084,clinic,Allied Physicians Clinton Hill
+40.5754978,-73.9843065,clinic,Ida G Israel Community Health Center
+40.7275196,-73.979284,,Paradise Gourmet Deli & Grill
+40.7100546,-74.0058746,hospital,Liberty Endoscopy Center
+40.6310944,-73.9928513,clinic,Boro Park Medical
+40.6319488,-73.9955171,,Grill Zone
+40.6315819,-73.9952587,,Flaming Grill
+40.6372601,-73.9899971,clinic,Boro Park Urgent Care
+40.6555782,-74.011705,hospital,Hospital for Special Surgery
+40.7616923,-73.9637818,hospital,Micheal's Optical
+40.7495832,-73.8986137,,Habibi Mini Market
+40.580572,-73.8374135,police,New York City Police Department Transit District 23
+40.6014817,-74.064188,police,New York State Police - SP Staten Island
+40.7467389,-73.8937501,,Stop & Go Convenience
+40.6013052,-73.9354359,,A&E 24 Hours Convenience Store
+40.604521,-74.1804851,clinic,IRMS Reproductive Medicine
+40.604165,-74.1808463,clinic,Smith Institute for Urology
+40.5867814,-73.9526785,,Fruit Garden Deli
+40.68266,-73.9097697,clinic,"Physical Medicine & Rehabilitation of NY, P.C."
+40.7585488,-73.9177881,,Delish Market
+40.6832801,-73.8556304,,Cherry Valley Marketplace
+40.759686,-73.9689398,clinic,Linkov Hair Surgery
+40.761576,-73.9698613,clinic,Russak Dermatology Clinic
+40.7735903,-73.9133064,clinic,Pain Management NYC
+40.8429625,-73.8849237,clinic,Pain Management NYC
+40.8167605,-73.9156573,clinic,Century Medical & Dental Center
+40.6933937,-73.9803641,clinic,Century Medical & Dental Center
+40.8040944,-73.9352742,clinic,Century Medical & Dental Center
+40.848202,-73.9375466,,Fine Fare Gold
+40.7513983,-73.9948286,police,
+40.5998512,-74.0913798,clinic,Northwell Health Physican Partners Obstetrics & Gynecology
+40.7574988,-73.9848314,pharmacy,Duane Reade
+40.7430137,-73.9550317,clinic,UMD Urgent Care
+40.7121737,-74.0104823,police,
+40.7296301,-73.9878992,clinic,Keisy Oriental Nature Center
+40.8054681,-73.9662253,clinic,Oula
+40.6646294,-73.9539171,,356 Express Sullivans Food Corp.
+40.6121376,-74.0706771,,Convenient Food Mart
+40.6346469,-74.075019,police,MTA Police Department District 9
+40.6818533,-73.9670703,clinic,Maimonides Doctors Clinton Hill Pavilion
+40.6786117,-73.9492522,,Showfar Farms Market
+40.7003998,-73.8990525,clinic,USA Vein Clinics
+40.7006214,-73.8979607,clinic,Osteopractic Center Physical Therapy
+40.7006281,-73.8985222,clinic,
+40.7915799,-73.9522778,clinic,Mount Sinai Physical Therapy
+40.6107755,-74.1427462,clinic,"Christopher J. Varughese, MD FACC"
+40.7459541,-73.9440721,clinic,Clarity Testing
+40.7513198,-73.8433339,police,Parks Enforcement Patrol
+40.5736067,-74.0957821,,All Night Long Deli
+40.7601286,-73.9635112,clinic,Rowe Chiropractic Offices
+40.5745482,-74.1195762,clinic,
+40.5745126,-74.1194953,clinic,
+40.5745571,-74.1194528,clinic,
+40.5749197,-74.1213805,clinic,
+40.6707856,-73.8559544,clinic,AFC Urgent Care
+40.5989214,-74.080395,clinic,Staten Island Dailysis Center
+40.5987864,-74.0807356,clinic,DaVita Dialysis
+40.6765638,-73.8915248,,Chawki Gourmet & Grocery
+40.6143852,-74.1089493,clinic,DaVita Dialysis
+40.6345155,-74.1049072,clinic,Northwell Health Physician Partners
+40.6345806,-74.1056911,clinic,West Brighton Clinic
+40.6348192,-74.1075806,clinic,"DCi Dialysis Clinic, Inc."
+40.7695264,-73.9841821,clinic,Mount Sinai Doctors
+40.7703522,-73.9858387,clinic,Mount Sinai West Maternal Fetal Medicine
+40.769921,-73.9859599,clinic,Mount Sinai Doctors
+40.5788455,-73.9752954,,Grab N Go
+40.5788331,-73.9752291,clinic,Centers Urgent Care
+40.7561643,-73.9818704,hospital,Manhattan Gastroenterology – Midtown Manhattan
+40.6089318,-74.1217826,clinic,Passport Health Staten Island Travel Clinic
+40.841513,-73.8602618,police,Parkchester Department of Public Safety 24 hour location
+40.7620127,-73.9162198,clinic,Astra Vein Treatment Center
+40.765956,-73.9549977,clinic,Jill Roberts Center for Inflammatory Bowel Disease
+40.7659392,-73.954958,clinic,Jill Roberts Center for Inflammatory Bowel Disease
+40.7530279,-73.8718151,clinic,Quick Solve
+40.7474623,-73.9818396,clinic,Mount Sinai Doctors
+40.602561,-74.0030802,police,New York City Police Department
+40.760643,-73.8318523,clinic,Rendr
+40.7347967,-73.8650915,clinic,Rego Park Medical Associates
+40.7471261,-73.9714099,,Heavenly Market
+40.70411032871048,-73.91768219682791,hospital,Wyckoff Heights Medical Center
+40.840262375701656,-73.92819837325598,police,NYPD SRG 2
+40.516917572763425,-74.19656746656315,hospital,Staten Island University Hospital South
+40.75524635364528,-73.70713398421931,hospital,Long Island Jewish Medical Center
+40.58524345861632,-74.08492380235639,hospital,Staten Island University Hospital
+40.58258884221015,-74.07987156399702,hospital,Staten Island Children and Youth Day Treatment Center and South Beach Psychiatric Center
+40.841169330672095,-73.94242839924743,hospital,Columbia University Irving Medical Center
+40.74727580092662,-73.97493508227113,clinic,NYU Langone Ambulatory Care Center
+40.73707134431009,-73.97689873782858,hospital,Veteran Affairs New York Harbor Healthcare System
+40.7389673297953,-73.97514149561012,hospital,NYC Health + Hospitals/Bellevue
+40.742024478358324,-73.97358853768573,hospital,NYU Langone Medical Center
+40.607900814599866,-74.0240235225427,hospital,VA New York Harbor Healthcare System Brooklyn Campus
+40.81677764559303,-73.924501068321,hospital,Lincoln Hospital
+40.61374515285456,-73.99603553766072,fuel,BP
+40.58565564357772,-73.96486668094654,hospital,NYC Health + Hospitals: South Brooklyn Health
+40.6103253,-73.9620736,fuel,Mobil
+40.58520853484858,-73.94958235513798,,NetCost Market
+40.60896343333334,-73.97380836666666,fuel,BP
+40.606378582429905,-73.98744484392616,fuel,Sunoco
+40.62736199868846,-73.96602208726944,fuel,Sunoco
+40.62201439385214,-73.98768747444343,fuel,BP
+40.59225524469462,-73.90815034905606,fuel,Mobil
+40.69299314176593,-73.97064889427234,,Saba Deli & Grocery Inc.
+40.726534967335326,-73.98783139424653,police,9th Precinct NYPD
+40.68386023844246,-74.00023685746213,police,New York Police Department 76th Precinct
+40.64463956432869,-74.07745230151163,police,120 Precinct Police Station
+40.703028255224915,-73.99303850432196,police,Brooklyn Property Clerk
+40.69065413598422,-73.99753625074692,clinic,NYU Langone Health Cobble Hill
+40.51184633786578,-74.2499970248446,police,New York City Police Department - 123rd Precinct
+40.68825917930136,-74.00161227423104,police,Waterfront Commission Police
+40.64408951656531,-74.02876492037437,police,NYPD Harbor Unit
+40.64848153551002,-73.90495129535427,police,NYPD 69th Precinct
+40.67115570379136,-73.88150495195198,police,NYPD - 75th Precinct
+40.74389074163619,-73.71715685425507,,7-Eleven
+40.67868359275951,-73.94441980964886,,7-Eleven
+40.62063033933148,-73.96402909981934,,Pomegranate
+40.608347310128885,-73.96169864615752,clinic,BRMI@Midwood
+40.608043426363025,-73.96167862857615,,Quentin Convenience
+40.65032142805067,-73.95551601297123,fuel,Shell
+40.650128010941785,-73.95536296195547,clinic,Sun River Health
+40.679071236231735,-73.9528067967395,fuel,Shell
+40.73001748752904,-73.81062125662913,police,NYPD 107 PCT
+40.617754128481955,-74.03383008455258,pharmacy,Wallgreens
+40.621789664566045,-74.0290753283245,clinic,CityMD
+40.576275781386315,-73.99037980583836,police,NYC Housing PD Service Area 1
+40.5785951576774,-73.98595741200228,,Bolla Market
+40.63599046081191,-74.02335150514176,clinic,NYU Langone Ambulatory Care Bay Ridge
+40.576538484258315,-73.97612200586438,police,NYPD 60th Precinct
+40.73629054999999,-73.71448019999998,clinic,PM Pediatric Urgent Care
+40.63576184923163,-74.02258633737594,,To Go
+40.58821047426265,-73.96089548403356,,7-Eleven
+40.5901481205748,-73.9752459162676,,Bolla Market
+40.590539765400074,-73.97447446272854,,Allegiance Mini-Mart
+40.59549878409763,-73.98272512972946,clinic,Stand-Up MRI of Bensonhurst
+40.60255848006002,-74.00307077813987,police,New York City Police Department - 62nd Precinct
+40.613810050000005,-73.99596285000001,,BP Shop
+40.613979819190845,-73.9958018835183,clinic,Vento Medical Plaza
+40.61690755115164,-73.99990893382848,,Shell
+40.610739053160415,-73.98142593038136,,Food Universe Marketplace
+40.625453513983665,-73.97641658325502,,GSA King Tomato Farm
+40.63159807152936,-73.974736043702,clinic,
+40.630352948840645,-73.97372085181637,police,Seventieth Precinct Police Station
+40.62575784887523,-73.99139678578013,police,Sixtysixth Precinct Police Station
+40.636336028090696,-73.9945904219082,,Happy Trees Farm
+40.645151128255364,-74.00926389709178,clinic,Sunset Terrace Family Health Center
+40.63858571076736,-74.02029490267878,clinic,Park Ridge Family Health Center
+40.638298581197006,-74.02154966399627,,24 Seven
+40.63930775805826,-74.02283833993901,fuel,7-Eleven
+40.64485852546225,-74.02087264472394,,Kaj Food Mart
+40.645023453175995,-74.02157622721845,clinic,Perlmutter Cancer Center Sunset Park
+40.64562644833657,-74.02099515260889,clinic,Sunset Park Family Health Center at NYU Langone
+40.65818791442869,-74.00105399310397,police,New York City Police Department 72nd Precinct
+40.65223088952448,-74.0060946952948,clinic,DHD Medical
+40.6431513647784,-73.9798752830514,clinic,Brooklyn Medical Services
+40.643157622372826,-73.97907281094538,clinic,Multispecialty Mecical Office
+40.657299279670454,-74.00068808226193,,Speedway
+40.66526500982794,-73.98920980400217,,5 Ave. Deli Grocery
+40.728802368720395,-73.97928369345644,clinic,"NYC Health + Hospitals/Gotham Health, Roberto Clemente Center"
+40.73438932493171,-73.98297129421252,hospital,NYU Langone Orthopedic Hospital
+40.59410813114814,-73.9604839433642,police,Sixtyfirst Precinct Police Station House
+40.603865604634336,-73.95613343672514,clinic,NYC Health + Hospitals/Gotham Health Homecrest
+40.60199765617295,-73.9424737045098,clinic,Medical Art Full Service P.C.
+40.601720119849666,-73.93549503378134,fuel,BP
+40.616269317698304,-73.94523207705429,pharmacy,CVS Pharmacy
+40.61392617667609,-73.94850239988037,hospital,Maimonides Midwood Community Hospital
+40.61836612126037,-73.95842137517221,,7-Eleven
+40.6257804,-73.95812035000002,clinic,Centers Urgent Care of Flatbush
+40.64348087333493,-73.95897236846423,clinic,Ditmas Park Medical Care
+40.61871870066301,-73.94297317101625,hospital,Mount Sinai Brooklyn
+40.692676776505444,-73.91209699706062,,Your Deal Food Corporation
+40.69817551824401,-73.91786916517995,police,NYPD 83rd Precinct
+40.627956387339715,-73.94165172443817,police,NYPD - 63 PCT
+40.65152847639066,-73.93983209341073,,Church Farm Market
+40.654021829057285,-73.95987988346559,clinic,Century Medical & Dental Center
+40.66457421709953,-73.94788005581755,police,NYPD -71st Precinct
+40.670516748568915,-73.9067652771996,clinic,Doral Health & Wellness
+40.66799,-73.95948860000001,police,NYPD Transit District 32
+40.67089232619871,-73.91254546437268,police,Seventythird Precinct Police Station
+40.67081021244837,-73.91353392235655,police,NYPD - 73rd Precinct
+40.718995344100406,-73.98856955249492,clinic,Mount Sinai Doctors
+40.68890594064839,-73.94464504611194,police,New York City Police Department - 79th Precinct
+40.690990427277264,-73.95134936723201,clinic,AdvantageCare Physicians
+40.69226659999999,-73.94179665000001,clinic,
+40.692276599711256,-73.9417101627289,clinic,
+40.696023000000004,-73.93809985,,4 Seasons Gourmet Deli
+40.68905622539381,-73.95643526985194,clinic,Lafayette Medical Plaza
+40.68921319131757,-73.95553658423964,clinic,Medical Office
+40.674705496888585,-73.93025466484006,police,77th Precinct
+40.69007750709416,-73.96050400484303,police,NYPD 88th Precinct
+40.69747447814056,-73.93324181678885,,BP Shop
+40.69965439191659,-73.9234522601309,police,Eightythird Precinct Police Station
+40.70312955864931,-73.92544043288066,,City Fresh Market
+40.702104956163325,-73.92466321441556,,Green Valley Gourmet Market
+40.67537016679127,-73.95900491467584,clinic,"Bishop Orris G. Walker, Junior Health Care Center"
+40.67564439856725,-73.9628719454482,police,NYPD Special Victims Division
+40.722245932897785,-73.85111501059981,police,NYPD 112 PCT
+40.75684383183559,-73.87553279678828,police,New York City Police Department - 115th Precinct
+40.712940293425,-73.87568921200987,clinic,Wyckoff Health Center
+40.704269330032226,-73.89360989320413,police,NYPD 104 PCT
+40.680939299849534,-73.97412910680475,police,NYPD 78th Precinct
+40.67842699040018,-73.9444882148898,fuel,BP
+40.75651429999999,-73.98638254999999,police,NYPD Times Square Substation
+40.74780438717264,-73.99144511674129,police,New York Police Department Traffic Control Division
+40.736765450580144,-73.9832805815355,police,New York City Police Department
+40.74571054414684,-73.97882556561245,clinic,Perlmutter Cancer Center
+40.75406434999999,-73.99552685,,H-yard Gourmet Deli
+40.7517408822464,-73.99348604568891,pharmacy,Duane Reade
+40.759882232212135,-73.99676028349826,police,Manhattan South Task Force
+40.76448705011015,-73.98686831114432,clinic,NYU Langone Ambulatory Care West Side
+40.80069063579226,-73.94111644966073,police,NYPD 25th Precinct
+40.75159363264222,-73.97971590044054,hospital,Manhattan Restorative Health Sciences
+40.77725529209139,-73.95297504148422,clinic,Mount Sinai Doctors
+40.79004995725659,-73.95386845889466,hospital,Mount Sinai Kravis Children's Hospital
+40.78909155939382,-73.95390655126874,clinic,May Center for Mount Sinai Doctors
+40.78408215299261,-73.97508313137463,police,NYPD 20 PCT
+40.70945187798999,-73.79747969538573,fuel,Hillside Ave Mobil Mart
+40.80882593468506,-73.95259490097258,police,NYPD 28 PCT
+40.81094673232629,-73.95375076523432,clinic,Harlem Health Center
+40.824326500000005,-73.94046095,police,NYPD PSA 6
+40.82543469018541,-73.94337445149333,,Ameer Food
+40.81468592918958,-73.9565385958153,police,NYPD 26 PCT
+40.83975022607469,-73.94144552638738,hospital,Morgan Stanley Children's Hospital
+40.84060585660211,-73.93576263034906,police,NYPD 33rd Precinct
+40.851527156338626,-73.935373162324,police,NYPD 34 PCT
+40.810136501221386,-73.91578786185818,clinic,"NYC Health + Hospitals/Gotham Health, Belvis"
+40.82070277711606,-73.91596761107238,police,NYPD - Police Service Area 7
+40.83278269667544,-73.90352411541986,clinic,Morrisania Chest Clinic
+40.844081347063685,-73.89415003338361,clinic,"NYC Health + Hospitals, Gotham Health Tremont"
+40.87041852457016,-73.90387833658258,hospital,Fordham Nursing and Rehabilitation Center
+40.86907379721835,-73.87963996376533,police,Fiftysecond Precinct Station House
+40.8799225652724,-73.87856638314466,clinic,Greene Medical Arts Pavilion
+40.88350689871929,-73.90237014920928,police,NYPD 50th Precinct
+40.88590107486238,-73.90961788812588,clinic,Montefiore Medical Group Riverdale
+40.71218490819402,-74.00178487601643,police,1 Police Plaza
+40.71317361224463,-73.9878662790355,hospital,Gouverneur Health Medical Center
+40.74595718094404,-73.97146630128198,clinic,New York University Medical Center
+40.783142967157026,-73.96415252053905,police,NYPD Central Park Precinct
+40.71422302110547,-73.95128987822127,,Metro Deli
+40.724429114021326,-73.94934309696977,clinic,"""Medyk"" Nassau Medical Center"
+40.71391055603199,-73.9019332426875,fuel,Eliot Exxon
+40.74028727025544,-73.89837841987453,,7-Eleven
+40.7449001585772,-73.90265438500924,clinic,Total Body Healthcare
+40.74168988706266,-73.90298638395728,hospital,Queens Blvd Extended Care
+40.74480465386605,-73.92153747408389,clinic,Tribeca Pediatrics
+40.748297750000006,-73.88914950000002,hospital,Rest Medical Care
+40.752110739952535,-73.92150086538683,,Food Bazaar
+40.757315265394574,-73.9207100021821,clinic,Medical & Professional Building
+40.76081298193647,-73.91714804402386,clinic,CityMD
+40.76009329315488,-73.91664419089592,clinic,Mackool Eye Institute and Laser Center
+40.75925969628732,-73.91840701914387,clinic,The Dermatology Specialists
+40.76929266735632,-73.91533485516874,police,NYPD 114 PCT
+40.766924522361734,-73.92206542950683,,Trade Fair #1
+40.76375123906595,-73.9284916858704,,Trade Fair
+40.744777819986716,-73.95211170144643,clinic,Leaf Medical
+40.74304381438751,-73.9547324602427,police,108th Precinct Police Station
+40.77500900174345,-73.9124174307048,,Sion Grocery & Candy Corp
+40.86010570943643,-73.84267022486982,clinic,Eastchester Cancer Center
+40.82680478359042,-73.85831833211095,fuel,Shell
+40.823608400000005,-73.82023269999999,clinic,MMG East Tremont
+40.83084309711304,-73.82732281868401,police,Fortyfifth Precinct Police Station
+40.691289418777565,-73.8119488565136,,C-Town
+40.68194248785955,-73.79286063453193,clinic,Thomas and Marie White Health Center
+40.67278787828845,-73.78861389385655,,49 Mini Mart
+40.69375576460596,-73.78132401624634,hospital,Jamaica Hospital Medical Center
+40.713034599700755,-73.82879902963774,clinic,Kew Gardens Dialysis Center
+40.72621769459839,-73.73514466080945,police,NYPD 105 PCT
+40.764912700000004,-73.81969340000002,,7-Eleven
+40.76496403340959,-73.8190252832992,fuel,Exxon
+40.763109323653886,-73.82888431731219,police,Strategic Response Group 4
+40.763757823265024,-73.8306471586744,fuel,Mobil
+40.75422079577544,-73.87196636761622,clinic,NYC Dept of Health Corona Sexual Health Clinic
+40.80020624038506,-73.92615393594535,police,NYPD Harbor Unit
+40.598639389096874,-73.76363713794855,clinic,Advantage Physicians
+40.579877024976504,-73.88869833171977,police,Triborough Bridge And Tunnel Authority
+40.58866377963298,-73.9519020823842,,Sheepshead Bay Fruit and Vegetable
+40.66094617802826,-73.84063163146227,,Ragtime News Stand
+40.658090995619865,-73.83922412183163,,7-Eleven
+40.6492220466223,-73.83780760087171,clinic,Optum Urgent Care
+40.71866498964245,-74.00137537393752,clinic,Charles B. Wang Community Health Center
+40.78890170166829,-73.93001761436803,hospital,Manhattan Psychiatric Center
+40.75597435960038,-73.99787576096458,fuel,Mobil
+40.74264159516409,-73.91857297414448,,Fresh N' Save Supermarket
+40.75968146693191,-73.9276444059898,fuel,Lukoil
+40.74514705797564,-73.8857264604701,hospital,Elmhurst Hospital
+40.66783743966844,-73.9791444641388,hospital,NewYork-Presbyterian Brooklyn Methodist Hospital
+40.73438094186887,-73.9903127168459,pharmacy,Duane Reade
+40.62364391576765,-74.1506290442178,police,121st Precinct
+40.78958480099819,-73.95292113919791,hospital,The Mount Sinai Hospital
+40.63603478765839,-74.10546551602849,hospital,Richmond University Medical Center
+40.62247402677744,-74.07575266292822,hospital,Bayley Seton Hospital
+40.65791572054696,-73.77181546179081,police,New York City Police Department Pound
+40.675354236348795,-73.86583848256895,fuel,Grand Slam
+40.7646872492353,-73.95390862648229,hospital,NewYork-Presbyterian / Weill Cornell Medical Center
+40.755576785076634,-73.81684531976735,hospital,Flushing Hospital Medical Center
+40.72904623757126,-73.851551467651,hospital,Long Island Jewish Forest Hills
+40.66816184734136,-73.97819040179785,hospital,NewYork-Presbyterian Brooklyn Center for Community Health
+40.6899893021403,-73.76873876492556,hospital,Saint Albans Community Living Center
+40.639450188329775,-73.9986019143155,hospital,Maimonides Medical Center
+40.848088011766855,-73.83933505747427,hospital,Bronx Psychiatric Center
+40.84805916575674,-73.84366842694672,hospital,Calvary Hospital - Bronx Campus
+40.84594906209145,-73.84576430373072,clinic,Montifore Medical Park - Einstein Campus
+40.85523108136641,-73.84661736389059,hospital,NYC Health + Hospitals/Jacobi
+40.84985893447642,-73.84610987507546,hospital,Jack D. Weiler Hospital
+40.729946484461045,-73.81026275716265,police,107th Precinct New York City Police Department
+40.75147303489986,-73.71073773332974,hospital,Zucker Hillside Hospital
+40.89352185077964,-73.86122617533076,hospital,Montefiore Medical Center - Wakefield Campus
+40.598657844723185,-73.75347960748675,hospital,Saint John's Episcopal Hospital
+40.65724930736895,-73.93447487535279,hospital,Kingsboro Psychiatric Center
+40.65662540001629,-73.94399821420619,hospital,Kings County Hospital Center
+40.65940512176823,-73.93323192293529,hospital,Kingsbrook Jewish Medical Center
+40.65528125343432,-73.91212512503917,hospital,Brookdale Hospital Medical Center
+40.700211064840374,-73.81644946463956,hospital,Jamaica Hospital Medical Center
+40.7177101518718,-73.80564024337774,hospital,Queens Hospital Center
+40.74128210559392,-73.7311447215947,hospital,Creedmoor Psychiatric Center
+40.74590952133513,-73.72595453552309,hospital,New York City Children's Center - Queens Campus
+40.77658786172367,-73.7690439649552,hospital,Saint Mary's Hospital for Children
+40.74718930748755,-73.82515399274408,hospital,NewYork-Presbyterian/Queens
+40.76804040070321,-73.92486243351411,hospital,Mount Sinai Queens
+40.69949923816733,-73.94276829525933,hospital,NYC Health + Hospitals/Woodhull
+40.674572020850995,-73.92063120284443,hospital,New York City Children's Center - Brooklyn Campus
+40.67838830830503,-73.93737563298987,hospital,Interfaith Medical Center
+40.690551453337974,-73.97792665007869,hospital,Brooklyn Hospital Center
+40.69522702433371,-73.97681613020768,clinic,"NYC Health + Hospitals/Gotham Health, Cumberland"
+40.733250770517515,-73.98242742244904,hospital,Mount Sinai Beth Israel
+40.764454092391446,-73.9569700325654,hospital,Memorial Sloan Kettering Cancer Center
+40.77364243961336,-73.96085697003065,hospital,Lenox Hill Hospital
+40.78505927377461,-73.94495339528333,hospital,NYC Health + Hospitals/Metropolitan
+40.80520933857144,-73.96141087844437,hospital,Mount Sinai Morningside
+40.81432966926897,-73.9389566704241,hospital,NYC Health + Hospitals/Harlem
+40.87331867778125,-73.9129883328377,hospital,NewYork-Presbyterian/Allen Hospital
+40.867287186199455,-73.90536051914106,hospital,James J Peters Veterans Affairs Medical Center
+40.85296096221836,-73.89134252230478,hospital,Saint Barnabas Hospital
+40.8434839804742,-73.91056902892413,hospital,BronxCare Hospital Center
+40.8314548031595,-73.9031781098702,hospital,Bronx-Lebanon Hospital Center Fulton Division
+40.84072466423568,-73.84846555300382,hospital,Montefiore Westchester Square Campus
+40.5823749609062,-73.95962652569513,fuel,Gulf
+40.67799864253317,-73.9734341367904,,Duane Reade
+40.796777114489416,-73.9344458238289,fuel,Shell
+40.78309625622631,-73.94520351734862,fuel,Shell
+40.68955039364213,-73.9809977370229,,7-Eleven
+40.61704673333333,-73.99980476666666,fuel,Shell
+40.679695163950235,-73.98376181319696,clinic,Fresenius Kidney Care
+40.78462534014462,-73.9470875271544,,Olive Oasis Deli & Grill
+40.610359010513996,-73.98463572143679,fuel,Mobil
+40.68630009537167,-73.99429758121512,clinic,CityMD
+40.84519085230644,-73.93851858867839,fuel,Shell
+40.7439046539059,-73.97548849463125,clinic,Hansjörg Wyss Department of Plastic Surgery
+40.65503921459199,-73.94431002303266,hospital,University Hospital of Brooklyn
+40.646743901087184,-74.0209983431354,hospital,NYU Langone Hospital – Brooklyn
+40.68081036183431,-73.96156586362557,fuel,Sunoco
+40.789386741873926,-73.948044607971,fuel,Shell
+40.743055580224336,-74.00318406709714,clinic,Callen Lorde Community Health Center
+40.67635716111063,-73.74200460213834,clinic,NYU Langone Health Medical Associates Laurelton
+40.61855224856681,-74.02968122708755,fuel,BP
+40.61656913227928,-73.97903865432961,clinic,Maimonides Medical Center
+40.5904636502611,-73.97452193760708,fuel,Allegiance
+40.76625058494385,-73.99402491048346,fuel,Mobil
+40.800626234345025,-73.93550947866521,clinic,Harlem East Life Plan
+40.787478032070574,-73.94436930613246,,Cherry Valley Marketplace
+40.74609748965854,-73.97848891476734,pharmacy,Duane Reade
+40.590262292481384,-73.97492980442011,fuel,Sunoco
+40.697424671188685,-73.93286369265466,fuel,Exxon
+40.697602552187064,-73.93319256766367,fuel,BP
+40.74314593679595,-73.9220436302294,fuel,Shell
+40.86611021582276,-73.92838956790277,fuel,BP
+40.83872526716325,-73.83524473495062,hospital,Montefiore Family Medical Association
+40.710305373605955,-74.00495721971754,hospital,NewYork-Presbyterian Lower Manhattan Hospital
+40.76973087995201,-73.98695750482128,hospital,Mount Sinai West
+40.73666897344406,-73.73017856701985,hospital,Creedmor Psychiatric Center
+40.65598865225803,-73.86531254911796,hospital,Brooklyn Developmental Disabilities Services Offices
+40.595950854299616,-73.96069266833054,fuel,Sunoco
+40.582763381116486,-73.95952712543057,,Bolla Market
+40.582934181874734,-73.98596218516622,fuel,Citgo
+40.73358329067396,-73.95246165654024,fuel,Gulf
+40.730960556575575,-73.95135334513468,fuel,BP
+40.73933611964775,-73.93431168973281,fuel,BP
+40.638249312134526,-74.02064542242147,fuel,BP
+40.63400186736802,-74.01428762301799,fuel,SEVENTH AVENUE
+40.63685520232358,-73.96845793984654,fuel,BP
+40.581654848132054,-73.96025815612164,fuel,Shell
+40.59263645694727,-73.96109876512904,fuel,BP
+40.643968898731025,-73.97049894274588,fuel,Shell
+40.60036796678124,-73.96102403949023,fuel,BP
+40.61407718475989,-73.96350981815525,fuel,Citgo
+40.63486142172283,-73.96789086418218,fuel,Speedway
+40.657202097654526,-74.0009073371876,fuel,Speedway
+40.74315770518315,-73.9152280847578,fuel,Mobil
+40.82096018485811,-73.93821401601765,fuel,Mobil
+40.61223995,-74.01139235000002,fuel,Mobil
+40.82389360293899,-73.83662438977908,clinic,AFC Urgent Care
+40.65171812946544,-74.00658507746463,fuel,BP
+40.80307896046634,-73.93372789853306,fuel,BP
+40.62680522169219,-73.9771097086017,,ShopRite
+40.70006796905981,-73.9613207183172,fuel,Citgo
+40.7304072867119,-73.8878253456543,fuel,Shell
+40.663440032831716,-73.95416053169562,fuel,BP
+40.58091175,-73.964076,fuel,Allegiance
+40.76047854534152,-73.72229789490667,clinic,Northwell Health Clinical Laboratories of New York
+40.6993774019491,-73.91439422852162,fuel,BP
+40.67650964999999,-73.90933494999999,fuel,
+40.65717249001927,-74.00418790437526,fuel,Sunoco
+40.6137047777468,-73.95389419408417,fuel,Allegiance
+40.63576554871154,-74.02277912513654,fuel,Amoco
+40.77037036258743,-73.94227768078662,hospital,NYC Health + Hospitals/Coler
+40.771840134630025,-73.84083541709154,police,New York City Police Department - Police Academy
+40.595499310753496,-74.09052793760715,hospital,Carmel Richmond
+40.76483148932975,-73.98517863758723,police,NYPD Midtown North PCT
+40.76155483281139,-73.96191396896869,clinic,Memorial Sloan Kettering Cancer Center

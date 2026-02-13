@@ -1,0 +1,13 @@
+# Ignorar archivos de sistema y entorno
+__pycache__/
+*.pyc
+.DS_Store
+.env
+venv/
+
+# Ignorar el mapa gigante descomprimido (Bloquea la subida si pesa >100MB)
+nyc_advanced.graphml
+
+# Ignorar otros archivos temporales o backups
+*.bak
+*.tmp

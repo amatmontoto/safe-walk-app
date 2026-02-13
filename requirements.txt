@@ -1,0 +1,10 @@
+streamlit
+pandas
+pydeck
+networkx
+osmnx
+numpy
+geopy
+streamlit-js-eval
+streamlit-autorefresh
+scipy
