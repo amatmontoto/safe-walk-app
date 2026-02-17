@@ -15,7 +15,7 @@ Using data from **NYC OpenData** (Crime Complaints) and **OpenStreetMap**, the a
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/amatmontoto/safe-walk-app.git](https://github.com/TU_USUARIO/safe-walk-app.git)
+    git clone [https://github.com/amatmontoto/safe-walk-app.git](https://github.com/amatmontoto/safe-walk-app.git)
     cd safe-walk-app
     ```
 
