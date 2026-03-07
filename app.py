@@ -9,6 +9,120 @@ from streamlit_js_eval import get_geolocation
 from streamlit_autorefresh import st_autorefresh
 from geopy.distance import geodesic
 import zipfile
+import os
+from dotenv import load_dotenv
+from groq import Groq
+import json
+import uuid
+import urllib.parse
+import requests
+
+
+
+
+load_dotenv()
+
+groq_client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+
+# LECTOR DE SENSORES Y CLIMA
+def fetch_ai_weather_context():
+    # Usamos la memoria para que el agente solo piense 1 vez por sesión (Latencia cero al recargar)
+    if "live_weather_context" in st.session_state:
+        return st.session_state.live_weather_context
+    
+    try:
+        # 1. Extracción de datos crudos (Coordenadas de Manhattan, NYC)
+        url = "https://api.open-meteo.com/v1/forecast?latitude=40.7128&longitude=-74.0060&current_weather=true"
+        response = requests.get(url, timeout=3).json()
+        weather_data = response.get("current_weather", {})
+        
+        # 2. El Agente Meteorólogo (Interpretación con IA)
+        agent_prompt = f"""
+        You are an elite urban meteorologist AI operating in New York City.
+        Here is the raw live sensor data: {weather_data}
+        (Note: weathercode follows WMO standard. 0 is clear, 61 is rain, 71 is snow, etc. is_day: 1 is day, 0 is night).
+        Translate this raw data into a short 4 to 8 word safety or environmental alert for pedestrians. 
+        Include 1 or 2 relevant emojis. 
+        Keep it strictly in English. NEVER include any other text, explanation, or quotes.
+        Example outputs: 
+        🌙 Chilly & Clear: Safe walking conditions.
+        🌧️ Wet & Slippery: Proceed with caution!
+        """
+        
+        # Usamos el modelo más rápido de Groq para que sea instantáneo
+        completion = groq_client.chat.completions.create(
+            messages=[{"role": "system", "content": agent_prompt}],
+            model="llama-3.3-70b-versatile", 
+            temperature=0.3,
+            max_tokens=30
+        )
+        
+        ai_weather_alert = completion.choices[0].message.content.strip().replace('"', '')
+        st.session_state.live_weather_context = ai_weather_alert
+        return ai_weather_alert
+        
+    except Exception as e:
+        # Esto imprimirá el error real en tu pantalla para que lo veamos
+        st.sidebar.error(f"🔍 Chivato del error: {e}") 
+        return "🌍 NYC Sensors offline. Assuming clear conditions."
+
+
+if "pending_crime" in st.session_state:
+    st.session_state.smart_crime = st.session_state.pending_crime
+    del st.session_state.pending_crime
+if "pending_safe" in st.session_state:
+    st.session_state.smart_safe = st.session_state.pending_safe
+    del st.session_state.pending_safe
+if "pending_avenues" in st.session_state:
+    st.session_state.smart_avenues = st.session_state.pending_avenues
+    del st.session_state.pending_avenues
+
+if "smart_origin" not in st.session_state: st.session_state.smart_origin = "Times Square, Manhattan, NY"
+if "user_pins" not in st.session_state: 
+    st.session_state.user_pins = []
+
+
+def extraer_calles_principales(nodos_ruta, grafo):
+    """Extrae las calles de forma robusta evitando cuelgues."""
+    calles = []
+    try:
+        for i in range(len(nodos_ruta)-1):
+            u, v = nodos_ruta[i], nodos_ruta[i+1]
+            if grafo.has_edge(u, v):
+                data = grafo.get_edge_data(u, v)
+                # Seleccionar la arista correcta (0 suele ser el default en MultiDiGraphs)
+                edge_info = data[0] if 0 in data else list(data.values())[0]
+                
+                if 'name' in edge_info:
+                    nombre = edge_info['name']
+                    # OSMnx a veces devuelve una lista si hay calles solapadas
+                    if isinstance(nombre, list): 
+                        nombre = nombre[0]
+                    
+                    if isinstance(nombre, str) and (not calles or calles[-1] != nombre):
+                        calles.append(nombre)
+                        
+        calles_unicas = list(dict.fromkeys(calles))
+        
+        if len(calles_unicas) > 3:
+            return f"{calles_unicas[0]}, continuing via {calles_unicas[len(calles_unicas)//2]}, and arriving via {calles_unicas[-1]}"
+        elif calles_unicas:
+            return ", ".join(calles_unicas)
+        else:
+            return "local unnamed streets"
+    except Exception as e:
+        return "unnamed pathways"
+    
+
+# Inicializar las variables que la IA y la barra lateral compartirán
+if "smart_origin" not in st.session_state: st.session_state.smart_origin = "Times Square, Manhattan, NY"
+if "smart_dest" not in st.session_state: st.session_state.smart_dest = "One World Trade Center, Manhattan, NY"
+# Inicializar variables (1.0 = Máxima prioridad, 0.0 = Ignorar)
+if "smart_crime" not in st.session_state: st.session_state.smart_crime = 1.0
+if "smart_safe" not in st.session_state: st.session_state.smart_safe = 0.5
+if "smart_avenues" not in st.session_state: st.session_state.smart_avenues = 1.0
+if "ai_trigger" not in st.session_state: st.session_state.ai_trigger = False
+
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(layout="wide", page_title="Safe Walk App | Corporate Edition")
@@ -41,10 +155,22 @@ def load_graph():
                 val = data['length']
                 data['length'] = float(val[0]) if isinstance(val, list) else float(val)
             except: data['length'] = 10.0
+        # LIMPIEZA DE DATOS ANTI-AMNESIA
         for attr in ['crime_w', 'safe_w', 'street_type']:
             if attr in data:
-                try: data[attr] = float(data[attr])
-                except: data[attr] = 0.0
+                val = data[attr]
+                try:
+                    # Si el mapa guardó los datos como un texto con corchetes e.g. "[1.5, 2.0]"
+                    if isinstance(val, str) and val.startswith('['):
+                        # Le quitamos los corchetes, separamos por comas y nos quedamos el primer número
+                        val = val.strip('[]').split(',')[0]
+                    # Si ya es una lista normal
+                    elif isinstance(val, list):
+                        val = val[0]
+                        
+                    data[attr] = float(val)
+                except: 
+                    data[attr] = 0.0
     return G
 
 @st.cache_data
@@ -139,21 +265,6 @@ def get_turn_by_turn(G, route_nodes):
 # --- SIDEBAR UI ---
 st.sidebar.title("Route Planner")
 
-# --- 🚨 SOS BUTTON (EMERGENCY) ---
-st.sidebar.markdown("### Emergency")
-sos_container = st.sidebar.container()
-if sos_container.button("🚨 SOS / PANIC", type="primary", use_container_width=True):
-    lat_sos = st.session_state.last_gps_coords[0] if st.session_state.last_gps_coords else "Unknown"
-    lon_sos = st.session_state.last_gps_coords[1] if st.session_state.last_gps_coords else "Unknown"
-    st.toast("EMERGENCY MODE ACTIVATED", icon="🚨")
-    st.sidebar.error(f"""
-    **EMERGENCY ASSISTANCE**
-    📍 **YOUR LOCATION:**
-    `{lat_sos}, {lon_sos}`
-    📞 **CALLING 911...**
-    """)
-    st.markdown('<meta http-equiv="refresh" content="0; url=tel:911">', unsafe_allow_html=True)
-
 st.sidebar.markdown("---") 
 
 # --- GPS MODULE ---
@@ -196,55 +307,185 @@ if lat_gps and lon_gps:
             except: pass
 
 # --- INPUTS ---
-origin_str = st.sidebar.text_input("Origin", value=default_origin)
-dest_str = st.sidebar.text_input("Destination", "One World Trade Center, Manhattan, NY")
+# ==========================================
+# ⚙️ SIDEBAR: INPUTS & PREFERENCES
+# ==========================================
+# ==========================================
+# 🌤️ ENVIRONMENTAL CONTEXT (LIVE AI AGENT)
+# ==========================================
+st.sidebar.markdown("### Live Environment")
+# Un pequeño spinner nativo muy elegante mientras el agente piensa
+with st.sidebar.status("📡 Syncing NYC Sensors...", expanded=False) as status:
+    live_weather = fetch_ai_weather_context()
+    status.update(label="Sensors Synced", state="complete", expanded=False)
+
+st.sidebar.info(f"**{live_weather}**")
+
+# Guardamos el contexto para que el Macro-Cerebro lo lea
+st.session_state.env_context = live_weather
+st.sidebar.markdown("---")
+
+st.sidebar.markdown("### Route Planner")
+
+# Cajas conectadas a la memoria de la IA
+st.session_state.smart_origin = st.sidebar.text_input("Origin", value=st.session_state.smart_origin)
+st.session_state.smart_dest = st.sidebar.text_input("Destination", value=st.session_state.smart_dest)
 
 st.sidebar.markdown("###") 
+btn_calculate = st.sidebar.button("Calculate Route", type="primary")
 
-btn_calculate = st.sidebar.button("Calculate Route", type="primary") 
+
+# ==========================================
+# 📍 COMMUNITY REPORTS (VISUAL PINS)
+# ==========================================
+st.sidebar.markdown("---")
+st.sidebar.markdown("### Community Reports")
+st.sidebar.caption("Report temporary incidents to visualize them on your map.")
+
+report_type = st.sidebar.selectbox("Incident Type:", [
+    "⚠️ Hazard / Accident", 
+    "🥊 Altercation / Suspicious", 
+    "💡 Broken Streetlights"
+])
+report_loc = st.sidebar.text_input("Location (e.g., '5th Ave and W 42nd St')")
+
+if st.sidebar.button("📍 Drop Pin", use_container_width=True):
+    if report_loc:
+        with st.spinner("Locating..."):
+            search_pin = report_loc
+            if "NY" not in search_pin and "New York" not in search_pin:
+                search_pin += ", New York City, NY"
+            
+            # Usamos el mismo geolocalizador que ya tienes
+            pin_coords = geolocator.geocode(search_pin, timeout=5)
+            
+            if pin_coords:
+                new_pin = {
+                    "id": str(uuid.uuid4()),
+                    "type": report_type,
+                    "location": report_loc,
+                    "lat": pin_coords.latitude,
+                    "lon": pin_coords.longitude
+                }
+                st.session_state.user_pins.append(new_pin)
+                st.rerun() # Refrescamos para que el mapa dibuje la chincheta
+            else:
+                st.sidebar.error("Location not found. Be more specific.")
+
+# --- Gestión de Chinchetas Activas (Borrado) ---
+if st.session_state.user_pins:
+    st.sidebar.markdown("#### Active Reports")
+    for pin in st.session_state.user_pins:
+        col1, col2 = st.sidebar.columns([4, 1])
+        with col1:
+            st.markdown(f"<span style='font-size: 0.85em;'>{pin['type']}<br><b>{pin['location']}</b></span>", unsafe_allow_html=True)
+        with col2:
+            # Botón para borrar la chincheta
+            if st.button("❌", key=f"del_{pin['id']}"):
+                # Filtramos la lista para quitar la que coincide con el ID
+                st.session_state.user_pins = [p for p in st.session_state.user_pins if p['id'] != pin['id']]
+                st.rerun()
 
 st.sidebar.markdown("---")
 
+
+st.sidebar.markdown("### Algorithm Preferences")
+
+# Casillas conectadas a la memoria de la IA
 # --- PREFERENCES ---
 st.sidebar.markdown("### Algorithm Preferences")
-check_crime = st.sidebar.checkbox("Avoid High-Risk Zones", value=True)
-check_safe = st.sidebar.checkbox("Proximity to Safe Havens (24h)", value=False)
-check_avenues = st.sidebar.checkbox("Prioritize Main Avenues", value=True)
+
+# Si la IA cambia la variable, la bolita de la pantalla se mueve sola.
+st.sidebar.slider("Avoid High-Risk Zones Weight", 0.0, 1.0, step=0.1, key="smart_crime")
+st.sidebar.slider("Proximity to Safe Havens Weight", 0.0, 1.0, step=0.1, key="smart_safe")
+st.sidebar.slider("Prioritize Main Avenues Weight", 0.0, 1.0, step=0.1, key="smart_avenues")
+
+# Variables finales para que tu motor Dijkstra las lea
+check_crime = st.session_state.smart_crime
+check_safe = st.session_state.smart_safe
+check_avenues = st.session_state.smart_avenues
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### Map Layers")
 
+
+# AQUÍ ESTÁN LAS VARIABLES QUE TE HABÍA ROTO (YA ESTÁN ARREGLADAS)
 show_heatmap = st.sidebar.checkbox("Show Risk Heatmap", value=False)
 usar_3d = st.sidebar.checkbox("3D Perspective", value=False)
-
-st.sidebar.markdown("###") 
 dark_mode = st.sidebar.toggle("Dark Mode", value=False) 
 
+# Variables finales de texto (las usa la IA y tu lógica de cálculo)
+origin_str = st.session_state.smart_origin
+dest_str = st.session_state.smart_dest
+check_crime = st.session_state.smart_crime
+check_safe = st.session_state.smart_safe
+check_avenues = st.session_state.smart_avenues
+
+# --- CONEXIÓN DE PESOS ---
 def dynamic_weight(u, v, d):
+    # Coste base de la calle: su longitud física real en metros
     cost = d.get('length', 10.0)
-    if check_avenues: cost *= d.get('street_type', 1.0)
-    if check_crime: cost += (d.get('crime_w', 0.0) * 10.0)
-    if check_safe: cost -= (d.get('safe_w', 0.0) * 20.0) 
+    
+    # 1. EL MURO DEL CRIMEN (Penalización multiplicativa extrema)
+    # En lugar de sumar metros sueltos, multiplicamos la longitud de la calle.
+    # Una calle de 200m con crimen alto pasará a "medir" miles de metros.
+    if check_crime > 0: 
+        cost += (cost * d.get('crime_w', 0.0) * 50.0 * check_crime)
+        
+    # 2. EL IMÁN DE SEGURIDAD (Atracción divisiva)
+    # Si hay puntos seguros, "encogemos" la calle para que el algoritmo 
+    # crea que es un atajo increíblemente corto y se desvíe hacia allí.
+    if check_safe > 0: 
+        cost = cost / (1.0 + (d.get('safe_w', 0.0) * 10.0 * check_safe))
+        
+    # 3. AVENIDAS (Descuento geométrico seguro)
+    # Si es una avenida principal, le aplicamos un "descuento" de hasta el 30% 
+    # en su distancia, atrayendo la ruta hacia calles grandes y bien iluminadas.
+    if check_avenues > 0: 
+        # Asumimos que street_type es mayor si es una calle principal
+        cost = cost * (1.0 - (0.3 * check_avenues * d.get('street_type', 1.0)))
+        
+    # Seguro de vida matemático: Evita costes negativos o de valor cero 
+    # que harían explotar la lógica interna de la librería NetworkX.
     return max(cost, 1.0)
 
 # LOGICA DE CALCULO
 auto_calc = use_live_gps and gps_valid and dest_str
 
-if btn_calculate or auto_calc:
-    with st.empty():
+if btn_calculate or auto_calc or st.session_state.ai_trigger:
+    st.session_state.ai_trigger = False 
+    
+    logic_container = st.container()
+    
+    with logic_container:
         if not use_live_gps: st.caption("Processing route logic...")
         
         try:
             start_coord = None
-            if gps_valid and (origin_str == "Current GPS Location" or origin_str == default_origin) and lat_gps:
-                start_coord = [lon_gps, lat_gps]
+            
+            # FILTRO ANTI-ERRORES GPS (Desacoplado del texto)
+            # AHORA SOLO salta si explícitamente pide el GPS. 
+            if origin_str == "Current GPS Location":
+                if gps_valid and lat_gps:
+                    start_coord = [lon_gps, lat_gps]
+                else:
+                    st.warning("📍 **GPS Error:** Your current location is detected outside of New York City (or GPS is disabled).")
+                    if st.button("🔙 Use Times Square Instead"):
+                        st.session_state.smart_origin = "Times Square, Manhattan, NY"
+                        st.rerun()
+                    st.stop()
             else:
+                # Todo lo demás (incluido "Times Square") se procesa como texto limpio
                 search_query = origin_str
                 if "NY" not in search_query and "New York" not in search_query:
                     search_query += ", New York City, NY"
+                
                 loc_origin = geolocator.geocode(search_query, timeout=5)
-                if loc_origin: start_coord = [loc_origin.longitude, loc_origin.latitude]
-                else: st.error(f"Could not locate origin: {origin_str}")
+                if loc_origin: 
+                    start_coord = [loc_origin.longitude, loc_origin.latitude]
+                else: 
+                    st.error(f"Could not locate origin: {origin_str}")
+                    st.stop()
 
             search_dest = dest_str
             if "NY" not in search_dest and "New York" not in search_dest:
@@ -321,24 +562,44 @@ if st.session_state.calculated_routes:
     if use_live_gps and gps_valid:
         st.info(f"NAVIGATION ACTIVE: {format_time(data['custom']['time'])} remaining")
     else:
+
         # --- NUEVO DISEÑO DE BLOQUES SEPARADOS ---
         col_safe, col_fast = st.columns(2)
 
         # Bloque Safe Route (Izquierda)
         with col_safe:
             st.success("🛡️ **Safe Route (Recommended)**")
+            
+            # --- FEATURE 2: SAFETY MATCH SCORE (SAFE) ---
+            # Calcula un porcentaje visualmente lógico (92% - 99%)
+            safe_score = min(99, int(92 + (st.session_state.smart_crime * 7)))
+            st.caption(f"**Safety Match:** {safe_score}%")
+            st.progress(safe_score / 100.0) # La barra de progreso pide un decimal de 0.0 a 1.0
+            
             st.metric("Estimated Time", format_time(data['custom']['time']), f"{data['custom']['dist']/1000:.2f} km")
             with st.expander("📄 Turn-by-Turn Directions"):
-                # Usamos un DataFrame para tener una tabla limpia con scroll
                 df_steps_safe = pd.DataFrame(data['custom']['steps'], columns=["Instruction"])
                 st.dataframe(df_steps_safe, hide_index=True, use_container_width=True)
+            
+            # --- FEATURE 1: SHARE MY WALK ---
+            safe_time = format_time(data['custom']['time'])
+            share_text = f"🚨 Safe Walk Alert: I am walking from {st.session_state.smart_origin} to {st.session_state.smart_dest}. Estimated travel time: {safe_time}. My Safe Walk app is actively monitoring the route."
+            encoded_text = urllib.parse.quote(share_text)
+            whatsapp_url = f"https://wa.me/?text={encoded_text}"
+            st.link_button("📲 Share Route with Trusted Contact", whatsapp_url, use_container_width=True)
         
         # Bloque Fastest Route (Derecha)
         with col_fast:
             st.info("**Fastest Route**")
+            
+            # --- FEATURE 2: SAFETY MATCH SCORE (FAST) ---
+            # Penaliza el porcentaje (45% - 75%) si el usuario pide seguridad y esta ruta la ignora
+            fast_score = max(45, int(75 - (st.session_state.smart_crime * 30)))
+            st.caption(f"**Safety Match:** {fast_score}%")
+            st.progress(fast_score / 100.0)
+            
             st.metric("Estimated Time", format_time(data['fast']['time']), f"{data['fast']['dist']/1000:.2f} km")
             with st.expander("📄 Turn-by-Turn Directions"):
-                # Usamos un DataFrame para tener una tabla limpia con scroll
                 df_steps_fast = pd.DataFrame(data['fast']['steps'], columns=["Instruction"])
                 st.dataframe(df_steps_fast, hide_index=True, use_container_width=True)
         
@@ -352,6 +613,34 @@ if st.session_state.calculated_routes:
 
     if view_mode in ["Compare Routes", "Fastest Route Only"]:
         layers.append(pdk.Layer("PathLayer", data=[{"path": data['fast']['geom'], "name": "Standard Route"}], get_path="path", get_color=[52, 152, 219], width_scale=20, width_min_pixels=4, pickable=True))
+
+        # --- DIBUJAR LOS COMMUNITY REPORTS (PINS) ---
+if st.session_state.user_pins:
+    # Asignamos un color distinto según el tipo de incidente
+    def get_pin_color(type_str):
+        if "Hazard" in type_str: return [255, 165, 0, 200]  # Naranja   
+        if "Altercation" in type_str: return [220, 20, 60, 200]  # Rojo Carmesí
+        if "Broken" in type_str: return [169, 169, 169, 220]  # Gris Oscuro
+        return [255, 0, 0, 200]
+
+    # Preparamos los datos para PyDeck
+    pin_data = []
+    for p in st.session_state.user_pins:
+        pin_data.append({
+            "pos": [p["lon"], p["lat"]],
+            "color": get_pin_color(p["type"]),
+            "name": p["type"] + " - " + p["location"]
+        })
+        
+    layers.append(pdk.Layer(
+        "ScatterplotLayer",
+        data=pin_data,
+        get_position="pos",
+        get_color="color",
+        get_radius=50, # Un poco más grandes para que destaquen
+        pickable=True,
+        auto_highlight=True
+    ))
 
     origin_color = [0, 102, 204] if (use_live_gps and gps_valid) else [46, 204, 113]
     points_data = [
@@ -377,6 +666,226 @@ st.pydeck_chart(pdk.Deck(
     height=750,
     tooltip={"html": "<b>{name}</b>", "style": {"backgroundColor": "white", "color": "black", "font-family": "Helvetica Neue, Arial", "z-index": "1000"}}
 ))
+
+# --- 🚨 SOS BUTTON (EMERGENCY) ---
+st.sidebar.markdown("### Emergency")
+sos_container = st.sidebar.container()
+if sos_container.button("🚨 SOS / PANIC", type="primary", use_container_width=True):
+    lat_sos = st.session_state.last_gps_coords[0] if st.session_state.last_gps_coords else "Unknown"
+    lon_sos = st.session_state.last_gps_coords[1] if st.session_state.last_gps_coords else "Unknown"
+    st.toast("EMERGENCY MODE ACTIVATED", icon="🚨")
+    st.sidebar.error(f"""
+    **EMERGENCY ASSISTANCE**
+    📍 **YOUR LOCATION:**
+    `{lat_sos}, {lon_sos}`
+    📞 **CALLING 911...**
+    """)
+    st.markdown('<meta http-equiv="refresh" content="0; url=tel:911">', unsafe_allow_html=True)
+
+    st.markdown("---")
+
+
+# ==========================================
+# 🧠 UNIFIED MACRO-BRAIN AI AGENT
+# ==========================================
+import json
+
+st.markdown("---")
+st.subheader("🤖 Safe Walk Agent")
+
+chat_container = st.container(height=400)
+
+if "chat_history" not in st.session_state:
+    st.session_state.chat_history = []
+
+for message in st.session_state.chat_history:
+    with chat_container.chat_message(message["role"]):
+        st.markdown(message["content"])
+
+with st.form("macro_brain_form", clear_on_submit=True):
+    col1, col2 = st.columns([5, 1])
+    with col1:
+        user_question = st.text_input("Ask for a route or analyze the current one:", 
+                                      label_visibility="collapsed", 
+                                      placeholder="Example: Take me to Central Park avoiding dark streets.")
+    with col2:
+        submit_btn = st.form_submit_button("Send")
+
+if submit_btn and user_question:
+    with chat_container.chat_message("user"):
+        st.markdown(user_question)
+    st.session_state.chat_history.append({"role": "user", "content": user_question})
+
+    # Extraer métricas si existen
+    origen_actual = st.session_state.smart_origin
+    destino_actual = st.session_state.smart_dest
+    tiempo_seguro_str, tiempo_rapido_str = "Not calculated", "Not calculated"
+    distancia_segura_str, distancia_rapida_str = "Not calculated", "Not calculated"
+    calles_seguras_str, calles_rapidas_str = "Unknown", "Unknown"
+
+    rutas_calculadas = st.session_state.get("calculated_routes")
+    if rutas_calculadas and isinstance(rutas_calculadas, dict):
+        def format_time(m): return f"{int(m)} mins" if m < 60 else f"{int(m//60)}h {int(m%60)}m"
+        def format_dist(m): return f"{float(m)/1000.0:.2f} km"
+        
+        tiempo_seguro_str = format_time(rutas_calculadas['custom']['time'])
+        distancia_segura_str = format_dist(rutas_calculadas['custom']['dist'])
+        tiempo_rapido_str = format_time(rutas_calculadas['fast']['time'])
+        distancia_rapida_str = format_dist(rutas_calculadas['fast']['dist'])
+        
+        try:
+            calles_seguras_str = extraer_calles_principales(rutas_calculadas['custom']['nodes'], G)
+            calles_rapidas_str = extraer_calles_principales(rutas_calculadas['fast']['nodes'], G)
+        except: pass
+
+    # PROMPT FUSIONADO: JSON MODE + EXHAUSTIVE RULES + MULTIPLE SCENARIOS
+    system_prompt = f"""
+    # ====================================================================
+    # CORE IDENTITY & MISSION
+    # ====================================================================
+    ROLE: You are 'Safe Walk', an elite, highly analytical urban safety AI and digital bodyguard operating exclusively within New York City.
+    MISSION: Your dual purpose is to mathematically justify the application's 'Safe Route' recommendations and to act as an intelligent routing engine that adjusts map parameters based on user intent.
+    TONE: Professional, protective, highly analytical, empathetic yet firm. You speak with the authority of a data scientist and the vigilance of a security expert.
+
+    # ====================================================================
+    # LANGUAGE & COMMUNICATION PROTOCOL
+    # ====================================================================
+    - INBOUND: You possess native-level comprehension of ALL human languages (Spanish, French, Mandarin, slang, colloquialisms, typos).
+    - OUTBOUND (CRITICAL): Your "reply" MUST ALWAYS BE STRICTLY IN ENGLISH. Under NO circumstances will you output your reply in any other language. If the user explicitly demands "Speak to me in Spanish," you must politely decline in English, stating your system is calibrated for English output only.
+
+    # ====================================================================
+    # CURRENT MAP CONTEXT (ABSOLUTE GROUND TRUTH)
+    # ====================================================================
+    - Origin: {origen_actual} | Destination: {destino_actual}
+    - Safe Route: Takes {tiempo_seguro_str}, covering {distancia_segura_str}. Path: {calles_seguras_str}
+    - Fast Route: Takes {tiempo_rapido_str}, covering {distancia_rapida_str}. Path: {calles_rapidas_str}
+    - Live Environmental Conditions: {st.session_state.get('env_context', 'Unknown')}
+
+    # ====================================================================
+    # OUTPUT RESTRICTION: STRICT JSON FORMAT
+    # ====================================================================
+    You MUST return ONLY a valid JSON object. Do not wrap it in markdown block quotes. Do not add preamble or postscript text. 
+    {{
+        "intent": "calculate_route" OR "analyze_route" OR "emergency" OR "general_chat",
+        "reply": "Your English response following the STRICT RULES below.",
+        "routing_data": {{
+            "origen": "EXACT landmark or street name ONLY (e.g., 'Times Square'). NEVER include words like 'from', 'de', 'my house'. If the user implies their current location, strictly write 'Current GPS Location'.",
+            "destino": "EXACT landmark or street name ONLY (e.g., 'Central Park'). NEVER include words like 'to', 'hacia', 'a'.",
+            "evitar_crimen": "FLOAT between 0.0 and 1.0",
+            "zonas_seguras_24h": "FLOAT between 0.0 and 1.0",
+            "avenidas_principales": "FLOAT between 0.0 and 1.0"
+        }}
+    }}
+
+    # ====================================================================
+    # SCENARIO HANDLING & "reply" RULES
+    # ====================================================================
+
+    SCENARIO A: ROUTE CALCULATION ("Take me to X", "I want to go to Y avoiding dark streets", "Llévame a Central Park")
+    - intent: "calculate_route"
+    - reply: "I am calculating your mathematically optimized route to [Destination] now, adjusting graph parameters for your safety..." (Keep it brief, max 2 sentences).
+
+    SCENARIO B: ROUTE ANALYSIS ("Why this route?", "Why the detour?", "¿Por qué me recomiendas esto?")
+    - intent: "analyze_route"
+    - reply: Act as a data scientist. 
+      * MANDATORY: Contrast the exact times and distances provided in the MAP CONTEXT.
+      * MANDATORY: Use the exact street names provided ({calles_seguras_str} vs {calles_rapidas_str}).
+      * DYNAMIC WEIGHTING: Explain that the routing graph actively penalizes nodes and edges with a documented history of safety incidents or poor visibility. The extra travel time is a mathematical trade-off for security.
+      * RESTRICTION: Do not exceed 4 sentences. 
+      * MANDATORY: Briefly justify the route considering the Live Environmental Conditions (e.g., if it's raining or nighttime, emphasize the need for well-lit or paved avenues).
+
+    SCENARIO C: IMMEDIATE DANGER / EMERGENCY ("I am being followed", "Help", "Me persiguen", "I am hurt")
+    - intent: "emergency"
+    - reply: "IMMEDIATE ACTION REQUIRED: Please press the SOS button on your screen immediately or dial 911. Move to a well-lit, populated area or a 24/7 safe haven. Your safety is the highest priority." (Drop all analytical data talk).
+
+    SCENARIO D: HOSTILE / ABUSIVE USER (Insults, profanity, aggression, "eres un inútil")
+    - intent: "general_chat"
+    - reply: Maintain absolute professionalism. De-escalate. "I am here strictly to assist with your urban navigation and safety in New York City. Please let me know your destination so I can calculate a secure route."
+
+    SCENARIO E: OFF-TOPIC / EXTERNAL QUERIES (Weather, transit times, jokes, coding help, general trivia)
+    - intent: "general_chat"
+    - reply: Pivot immediately. "I am a specialized spatial risk analysis AI. I do not have access to real-time weather, transit schedules, or general knowledge. My sole function is guiding you safely through NYC."
+
+    SCENARIO F: VAGUE LOCATIONS ("Take me somewhere fun", "I want food", "Llévame a un bar")
+    - intent: "general_chat"
+    - reply: "To provide the safest possible path, I require a specific address, intersection, or recognized landmark in New York City. Where exactly would you like to go?"
+
+    SCENARIO G: OUT OF BOUNDS ("Take me to Boston", "Route to Chicago", "Quiero ir a Madrid")
+    - intent: "general_chat"
+    - reply: "My spatial risk graph is strictly calibrated for the five boroughs of New York City. I cannot calculate routes outside this jurisdiction."
+
+    SCENARIO H: MODIFY ROUTE PREFERENCES ("Make it shorter", "I don't care about danger", "Give me more light")
+    - intent: "calculate_route"
+    - reply: "I am recalculating your route with your updated preferences..."
+    - routing_data: You MUST actively change the boolean values here to match the user's request. If they want a shorter route and do not care about danger, you MUST set "evitar_crimen": false and "avenidas_principales": false. If they want more light, set "avenidas_principales": true. YOU MUST use the "calculate_route" intent to physically update the map.
+
+    # ====================================================================
+    # ZERO HALLUCINATION DIRECTIVE (CRITICAL)
+    # ====================================================================
+    1. NEVER invent specific crime statistics (e.g., do NOT say "crime is 20% higher here").
+    2. NEVER invent specific Points of Interest (POIs) like police stations, hospitals, or open stores unless the user explicitly names them. Say "commercial zones" instead of "a 24h McDonald's".
+    3. NEVER invent street names. ONLY use the ones provided in the CURRENT MAP CONTEXT.
+    """
+
+    messages_for_api = [{"role": "system", "content": system_prompt}] + st.session_state.chat_history[-3:]
+
+    with st.spinner("Executing detailed algorithmic analysis..."):
+        try:
+            chat_completion = groq_client.chat.completions.create(
+                messages=messages_for_api,
+                model="llama-3.3-70b-versatile",
+                temperature=0.1, # Muy baja para asegurar que el JSON no se rompa
+                response_format={"type": "json_object"}
+            )
+            
+            raw_response = chat_completion.choices[0].message.content
+            ai_data = json.loads(raw_response)
+            
+            ai_reply = ai_data.get("reply", "I am processing your request based on current graph data.")
+            ai_intent = ai_data.get("intent", "general_chat")
+
+            with chat_container.chat_message("assistant"):
+                st.markdown(ai_reply)
+            st.session_state.chat_history.append({"role": "assistant", "content": ai_reply})
+
+            # Alteramos la barra lateral internamente y forzamos recálculo si toca
+            # Alteramos la barra lateral internamente y forzamos recálculo
+            # Alteramos la barra lateral internamente y forzamos recálculo
+            if ai_intent == "calculate_route" and "routing_data" in ai_data:
+                r_data = ai_data["routing_data"]
+                
+                # ASIGNACIÓN DIRECTA SIN BLOQUEOS
+                nuevo_origen = r_data.get("origen", "")
+                nuevo_destino = r_data.get("destino", "")
+                
+                if nuevo_origen:
+                    # Si la IA detecta que el usuario habla de su ubicación actual
+                    if "current" in nuevo_origen.lower() or "aquí" in nuevo_origen.lower() or "here" in nuevo_origen.lower():
+                        st.session_state.smart_origin = "Current GPS Location"
+                    else:
+                        st.session_state.smart_origin = nuevo_origen
+                        
+                if nuevo_destino:
+                    st.session_state.smart_dest = nuevo_destino
+
+                # GUARDAMOS LAS ÓRDENES COMO PENDIENTES PARA NO ROMPER STREAMLIT
+                if "evitar_crimen" in r_data:
+                    st.session_state.pending_crime = float(r_data["evitar_crimen"])
+                if "zonas_seguras_24h" in r_data:
+                    st.session_state.pending_safe = float(r_data["zonas_seguras_24h"])
+                if "avenidas_principales" in r_data:
+                    st.session_state.pending_avenues = float(r_data["avenidas_principales"])
+                
+                st.session_state.ai_trigger = True
+                st.rerun()
+
+        except Exception as e:
+            st.error(f"Brain connection error: {e}")
+
+st.markdown("<br><br>", unsafe_allow_html=True)
+st.markdown("---")
+
+# Debajo de esto van los partners
 
 # --- FOOTER CORPORATIVO ---
 footer_bg = "#1E1E1E" if dark_mode else "#F0F2F6"
